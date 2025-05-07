@@ -228,4 +228,61 @@ body {
 }
 .footer-social li a:hover {
   color: #c3cfe2;
+}
+
+/* Team Section */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.team-member {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(45,58,74,0.07);
+  padding: 2rem 1.5rem;
+  max-width: 280px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(45,58,74,0.10);
+}
+.team-role {
+  font-weight: bold;
+  color: #4e5d6c;
+  margin-bottom: 0.5rem;
+}
+.team-bio {
+  font-size: 0.98rem;
+  color: #3a4a5c;
+  margin-bottom: 1rem;
+}
+.team-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.team-links li a {
+  color: #2d3a4a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.team-links li a:hover {
+  color: #4e5d6c;
 } 

@@ -1,0 +1,11 @@
+<div class="team-member">
+  <img src="/assets/images/{{ member.photo }}" alt="{{ member.name }}" class="team-photo">
+  <h3>{{ member.name }}</h3>
+  <p class="team-role">{{ member.role }}</p>
+  <p class="team-bio">{{ member.bio }}</p>
+  <ul class="team-links">
+    {% if member.links.linkedin %}<li><a href="{{ member.links.linkedin }}" target="_blank">LinkedIn</a></li>{% endif %}
+    {% if member.links.twitter %}<li><a href="{{ member.links.twitter }}" target="_blank">Twitter</a></li>{% endif %}
+    {% if member.links.github %}<li><a href="{{ member.links.github }}" target="_blank">GitHub</a></li>{% endif %}
+  </ul>
+</div> 
