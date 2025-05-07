@@ -1,0 +1,8 @@
+- title: Project Alpha
+  description: "A modern website for a local business."
+  image: alpha.jpg
+  link: "#"
+- title: Project Beta
+  description: "E-commerce platform for a boutique retailer."
+  image: beta.jpg
+  link: "#" 

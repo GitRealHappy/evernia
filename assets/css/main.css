@@ -1,0 +1,231 @@
+/* Evernia Design - Main Stylesheet */
+
+body {
+  font-family: 'Lora', serif;
+  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2d3a4a;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70vh;
+  padding: 4rem 8vw 2rem 8vw;
+  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.hero-content {
+  max-width: 50%;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.02em;
+}
+.hero-content .subtitle {
+  font-size: 1.5rem;
+  color: #4e5d6c;
+  margin-bottom: 1.5em;
+}
+.cta-button {
+  background: #2d3a4a;
+  color: #fff;
+  padding: 0.75em 2em;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(45,58,74,0.08);
+}
+.cta-button:hover {
+  background: #4e5d6c;
+  transform: translateY(-2px) scale(1.04);
+}
+.hero-art {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-art img {
+  width: 100%;
+  max-width: 350px;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.intro {
+  text-align: center;
+  padding: 3rem 2vw 2rem 2vw;
+}
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Lora', serif;
+}
+.intro p {
+  font-size: 1.2rem;
+  color: #4e5d6c;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services {
+  background: #f8fafc;
+  padding: 4rem 2vw 4rem 2vw;
+}
+.services h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #2d3a4a;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.service {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(45,58,74,0.07);
+  padding: 2rem 1.5rem;
+  max-width: 320px;
+  min-width: 240px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: #3a4a5c;
+}
+.service ul {
+  padding-left: 1.2em;
+  margin: 0;
+  color: #4e5d6c;
+  font-size: 1rem;
+}
+.services-summary {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #3a4a5c;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services .cta-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+@media (max-width: 900px) {
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service {
+    max-width: 95vw;
+    width: 100%;
+  }
+}
+
+/* Header & Navigation */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(45,58,74,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2vw;
+}
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3a4a;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: #2d3a4a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+  padding: 0.25em 0.5em;
+  border-radius: 0.3em;
+}
+.nav-links li a:hover, .nav-links li a:focus {
+  background: #f5f7fa;
+  color: #4e5d6c;
+}
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 4vw;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .nav-logo {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Footer */
+.site-footer {
+  background: #2d3a4a;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer-social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.footer-social li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-social li a:hover {
+  color: #c3cfe2;
+} 

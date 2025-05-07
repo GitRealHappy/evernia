@@ -1,0 +1,141 @@
+/* Evernia Design - Main Stylesheet */
+
+body {
+  font-family: 'Lora', serif;
+  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2d3a4a;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70vh;
+  padding: 4rem 8vw 2rem 8vw;
+  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.hero-content {
+  max-width: 50%;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.02em;
+}
+.hero-content .subtitle {
+  font-size: 1.5rem;
+  color: #4e5d6c;
+  margin-bottom: 1.5em;
+}
+.cta-button {
+  background: #2d3a4a;
+  color: #fff;
+  padding: 0.75em 2em;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(45,58,74,0.08);
+}
+.cta-button:hover {
+  background: #4e5d6c;
+  transform: translateY(-2px) scale(1.04);
+}
+.hero-art {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-art img {
+  width: 100%;
+  max-width: 350px;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.intro {
+  text-align: center;
+  padding: 3rem 2vw 2rem 2vw;
+}
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Lora', serif;
+}
+.intro p {
+  font-size: 1.2rem;
+  color: #4e5d6c;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services {
+  background: #f8fafc;
+  padding: 4rem 2vw 4rem 2vw;
+}
+.services h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #2d3a4a;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.service {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(45,58,74,0.07);
+  padding: 2rem 1.5rem;
+  max-width: 320px;
+  min-width: 240px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: #3a4a5c;
+}
+.service ul {
+  padding-left: 1.2em;
+  margin: 0;
+  color: #4e5d6c;
+  font-size: 1rem;
+}
+.services-summary {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #3a4a5c;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services .cta-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+@media (max-width: 900px) {
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service {
+    max-width: 95vw;
+    width: 100%;
+  }
+} 
