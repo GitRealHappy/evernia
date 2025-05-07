@@ -55,6 +55,32 @@ A professional web presence for Evernia Design, representing a team of web desig
 
 ---
 
+## 9. Project Checkpoints / Updates
+
+### Checkpoint: Initial Structure Implemented (2024-05-07)
+
+**What's been completed:**
+- All main pages scaffolded: Home, About, Services, Portfolio, Blog, Contact, Careers (with placeholder content).
+- Persistent header/navigation bar and footer (with social links) implemented as includes.
+- Responsive, modern CSS for header and footer.
+- `_data/` directory with YAML files for team, portfolio, and services (with sample data).
+- `assets/images/` directory created for future images.
+- All content in Markdown or YAML for easy editing.
+
+**Deviations from plan:**
+- No major deviations. All foundational structure matches the plan.
+
+**Next steps:**
+- Render data from YAML files on relevant pages (e.g., team on About, services on Services, portfolio on Portfolio).
+- Add real or sample images and update data files.
+- Flesh out page content and add more design polish.
+- Set up deployment to GitHub Pages for live preview.
+
+**Notes:**
+- This checkpoint documents the completion of the initial project skeleton. All future changes and customizations should be recorded in this section.
+
+---
+
 # Instructions
 - Follow this structure for all new pages and features.
 - Document any deviations or customizations in this file.

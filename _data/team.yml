@@ -1,14 +1,20 @@
-- name: Jane Doe
+- name: Jesse Boyes
   role: Creative Director
-  bio: "Jane leads the creative vision at Evernia Design."
-  photo: jane.jpg
+  bio: "Jesse leads the creative vision at Evernia Design."
+  photo: jesse.jpg
   links:
-    linkedin: "https://linkedin.com/in/janedoe"
-    twitter: "https://twitter.com/janedoe"
-- name: John Smith
+    linkedin: "https://linkedin.com/in/jesseboyes"
+    twitter: "https://twitter.com/jesseboyes"
+- name: John Hidelgeiser
   role: Lead Developer
   bio: "John builds robust web solutions for our clients."
   photo: john.jpg
   links:
-    github: "https://github.com/johnsmith"
-    linkedin: "https://linkedin.com/in/johnsmith" 
+    github: "https://github.com/johnhidelgeiser"
+    linkedin: "https://linkedin.com/in/johnhidelgeiser" 
+- name: Haggard Lumhoven
+  role: SEO Solutions Engineer
+  bio: "Haggard is an SEO Solutions Engineer at Evernia Design."
+  photo: haggard.jpg
+  links:
+    linkedin: "https://linkedin.com/in/haggardlumhoven"
