@@ -285,4 +285,27 @@ body {
 }
 .team-links li a:hover {
   color: #4e5d6c;
+}
+
+/* Layout Container */
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Modern vertical spacing for headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2.2rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.2;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  line-height: 1.7;
 } 
