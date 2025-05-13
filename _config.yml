@@ -24,7 +24,7 @@ description: >-
   Custom web design and development focused on speed, aesthetics, and results.
 baseurl: "/evernia" # the subpath of your site, e.g. /blog
 url: "https://oakmoss.ca" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: YourTwitterHandle # Replace with actual handle
+twitter_username: unblockedcarver # Replace with actual handle
 github_username:  GitRealHappy # Assuming this is the relevant GitHub username
 
 # Build settings
