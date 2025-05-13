@@ -119,6 +119,14 @@ A professional web presence for Evernia Design, representing a team of web desig
 
 ---
 
+## 10. Maintenance
+- **Theme Updates:** Periodically check for updates to the Jekyll theme (e.g., Minima) to incorporate bug fixes, new features, or address deprecations (like the current Sass warnings).
+- **Dependency Review:** Regularly review and update gems in `Gemfile` using `bundle update` (especially the `github-pages` gem) to ensure compatibility and security.
+- **Build Log Monitoring:** When changes are pushed, check GitHub Actions build logs for any new warnings or errors that might indicate emerging issues with dependencies or Jekyll itself.
+- **Content Audit:** Periodically review content for accuracy, relevance, and broken links.
+
+---
+
 # Instructions
 - Follow this structure for all new pages and features.
 - Document any deviations or customizations in this file.
