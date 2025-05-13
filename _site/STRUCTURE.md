@@ -7,6 +7,11 @@ A professional web presence for Evernia Design, representing a team of web desig
 - **Phase 1:** Jekyll static site, hosted on GitHub Pages.
 - **Phase 2 (future):** Option to migrate to a more advanced stack (e.g., Next.js, Astro, or custom backend) for dynamic features.
 
+### 2.1. Local Development Environment
+- **Ruby Version Management:** `rbenv` is used to manage Ruby versions. The project is configured to use a specific Ruby version (e.g., 3.3.8 via a `.ruby-version` file).
+- **Dependencies:** Project dependencies (Jekyll, gems) are managed by `Bundler` via `Gemfile` and `Gemfile.lock`.
+- **Running Locally:** Use `rbenv exec bundle exec jekyll serve` to ensure the correct Ruby environment and gems are used.
+
 ## 3. Site Structure
 
 ### Pages
@@ -46,6 +51,14 @@ A professional web presence for Evernia Design, representing a team of web desig
 ## 7. Deployment
 - Hosted on GitHub Pages (branch: `main` or `gh-pages`).
 - Custom domain (optional).
+- **Configuration (`_config.yml`):**
+  - For deployment to a subpath (e.g., `username.github.io/repositoryname/` or `customdomain.com/repositoryname/`):
+    - `url`: Set to the main domain (e.g., `https://username.github.io` or `https://customdomain.com`).
+    - `baseurl`: Set to the repository name/subpath (e.g., `"/repositoryname"`).
+  - For deployment to a root custom domain (e.g., `www.yourprojectdomain.com/`):
+    - `url`: Set to the full custom domain (e.g., `https://www.yourprojectdomain.com`).
+    - `baseurl`: Set to `""` (empty string).
+    - A `CNAME` file containing the custom domain (e.g., `www.yourprojectdomain.com`) must be present in the repository root.
 
 ---
 
@@ -78,6 +91,31 @@ A professional web presence for Evernia Design, representing a team of web desig
 
 **Notes:**
 - This checkpoint documents the completion of the initial project skeleton. All future changes and customizations should be recorded in this section.
+
+### Checkpoint: Local Environment & Config Update (2024-05-13)
+
+**What's been completed:**
+- Set up local Ruby development environment using `rbenv` (Ruby 3.3.8).
+- Resolved `bundler` and `jekyll` gem installation issues.
+- Successfully ran the Jekyll site locally.
+- Updated `index.markdown` with new landing page content from `evernialanding.md`.
+- Configured `_config.yml` with correct `url` and `baseurl` for deployment to `https://oakmoss.ca/evernia`.
+- Pushed all changes to GitHub.
+
+**Deviations from plan:**
+- Encountered and resolved Ruby environment and bundler versioning issues.
+
+**Next steps:**
+- Verify site functionality and appearance on `https://oakmoss.ca/evernia`.
+- Continue with DNS configuration for `www.everniadesign.com` and update `_config.yml` and add `CNAME` file when ready.
+- Address SASS deprecation warnings from the Minima theme (consider updating theme or overriding styles).
+- Add missing images (e.g., `jesse.jpg`, `john.jpg`, `haggard.jpg`) and `favicon.ico`.
+- Render data from YAML files on relevant pages (Services, Portfolio).
+- Flesh out remaining page content.
+
+**Notes:**
+- The `baseurl` in `_config.yml` is critical for correct asset pathing when not deploying to a root domain.
+- SASS deprecation warnings from Minima 2.5.2 are present but not currently breaking the build.
 
 ---
 
