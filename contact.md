@@ -5,4 +5,4 @@ layout: default
 
 # Contact
 
-Get in touch with us! Email: info@everniadesign.com 
+Get in touch with us! Email: jesseboyes.tv@gmail.com 
