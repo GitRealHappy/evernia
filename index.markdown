@@ -6,7 +6,7 @@ layout: default
 title: Evernia Design
 ---
 
-# evernia design landing page
+# Canada Based Web Development for Service Professionals and Forward Thinking Entrepeneurs
 
 ### **Is Your Outdated Website Costing You Clients Every Single Day? Discover How a Blazing-Fast, Custom Site Can Double Your Bookings – Without The Usual Tech Headaches!**
 
