@@ -106,15 +106,14 @@ A professional web presence for Evernia Design, representing a team of web desig
 - Encountered and resolved Ruby environment and bundler versioning issues.
 
 **Next steps:**
-- Verify site functionality and appearance on `https://oakmoss.ca/evernia`.
-- Continue with DNS configuration for `www.everniadesign.com` and update `_config.yml` and add `CNAME` file when ready.
+- Verify site functionality and appearance on `https://www.everniadesign.com` after DNS propagation and GitHub Pages update.
 - Address SASS deprecation warnings from the Minima theme (consider updating theme or overriding styles).
-- Add missing images (e.g., `jesse.jpg`, `john.jpg`, `haggard.jpg`) and `favicon.ico`.
+- Add `favicon.ico`.
 - Render data from YAML files on relevant pages (Services, Portfolio).
 - Flesh out remaining page content.
 
 **Notes:**
-- The `baseurl` in `_config.yml` is critical for correct asset pathing when not deploying to a root domain.
+- The `CNAME` file and updated `_config.yml` (empty `baseurl`, correct `url`) are critical for custom domain functionality.
 - SASS deprecation warnings from Minima 2.5.2 are present but not currently breaking the build.
 
 ---

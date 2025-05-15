@@ -152,7 +152,8 @@ The best? This could be the turning point for your business, unlocking a flood o
 
 Don't let another ideal client slip through your fingers because your website isn't up to par.
 
-**[Button: Book Your FREE 5-Point Website Audit Now!]**
+<a href="{{ site.baseurl }}/book-audit/" class="cta-button cta-bottom-index">Book Your FREE 5-Point Website Audit Now!</a>
+<a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button cta-bottom-index">Building Your First Website? Start Here!</a>
 
 P.S. Remember, your competitors are online, and they're not waiting. Every day you delay is another day you could be losing business. Our AI-enhanced process means we can get your powerful new website live in as little as 2-8 weeks. Let's talk!
 

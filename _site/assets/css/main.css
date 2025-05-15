@@ -360,4 +360,52 @@ p {
   margin-top: 0;
   margin-bottom: 1.3rem;
   line-height: 1.7;
+}
+
+/* Style for the CTA button at the bottom of the index page */
+.cta-bottom-index {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block; /* Ensures margins apply correctly and it behaves like a button */
+}
+
+/* Form Styles */
+.form-container {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-top: 2em;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: .5em;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-container input[type="email"],
+.form-container input[type="url"],
+.form-container input[type="text"], /* In case you add other text inputs */
+.form-container textarea {
+  width: 100%;
+  padding: .75em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.form-container button[type="submit"].cta-button {
+  /* .cta-button styles are already defined, this is just to be specific */
+  /* You can add specific overrides here if needed */
+  width: auto;
+  cursor: pointer;
 } 

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evernia Design Website Structure</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="navbar">
+    <a href="/" class="nav-logo">Evernia Design</a>
+    <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/careers">Careers</a></li>
+    </ul>
+  </nav>
+</header> 
+  <div class="container">
+    <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Evernia Design Website Structure</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="evernia-design-website-structure">Evernia Design Website Structure</h1>
+
+<h2 id="1-purpose">1. Purpose</h2>
+<p>A professional web presence for Evernia Design, representing a team of web designers and developers. The site will showcase services, portfolio, team, and contact information.</p>
+
+<h2 id="2-tech-stack">2. Tech Stack</h2>
+<ul>
+  <li><strong>Phase 1:</strong> Jekyll static site, hosted on GitHub Pages.</li>
+  <li><strong>Phase 2 (future):</strong> Option to migrate to a more advanced stack (e.g., Next.js, Astro, or custom backend) for dynamic features.</li>
+</ul>
+
+<h3 id="21-local-development-environment">2.1. Local Development Environment</h3>
+<ul>
+  <li><strong>Ruby Version Management:</strong> <code class="language-plaintext highlighter-rouge">rbenv</code> is used to manage Ruby versions. The project is configured to use a specific Ruby version (e.g., 3.3.8 via a <code class="language-plaintext highlighter-rouge">.ruby-version</code> file).</li>
+  <li><strong>Dependencies:</strong> Project dependencies (Jekyll, gems) are managed by <code class="language-plaintext highlighter-rouge">Bundler</code> via <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code>.</li>
+  <li><strong>Running Locally:</strong> Use <code class="language-plaintext highlighter-rouge">rbenv exec bundle exec jekyll serve</code> to ensure the correct Ruby environment and gems are used.</li>
+</ul>
+
+<h2 id="3-site-structure">3. Site Structure</h2>
+
+<h3 id="pages">Pages</h3>
+<ul>
+  <li><strong>Home:</strong> Agency intro, value proposition, call to action.</li>
+  <li><strong>About:</strong> Team bios, agency story, mission/vision.</li>
+  <li><strong>Services:</strong> List and details of services offered.</li>
+  <li><strong>Portfolio:</strong> Showcase of past projects (images, descriptions, links).</li>
+  <li><strong>Blog/Insights:</strong> (Optional) Articles, news, or design tips.</li>
+  <li><strong>Contact:</strong> Contact form, email, phone, social links.</li>
+  <li><strong>Careers:</strong> (Optional) Open positions, team culture.</li>
+</ul>
+
+<h3 id="navigation">Navigation</h3>
+<ul>
+  <li>Persistent top navigation bar with links to all main pages.</li>
+  <li>Footer with contact info, social links, copyright.</li>
+</ul>
+
+<h3 id="team-representation">Team Representation</h3>
+<ul>
+  <li>Each team member has a profile (photo, bio, role, links).</li>
+  <li>“Meet the Team” section on About page.</li>
+</ul>
+
+<h2 id="4-content-management">4. Content Management</h2>
+<ul>
+  <li>All content in Markdown files for easy editing.</li>
+  <li>Images in <code class="language-plaintext highlighter-rouge">/assets/images/</code>.</li>
+  <li>Team, portfolio, and services as data files (<code class="language-plaintext highlighter-rouge">_data/team.yml</code>, <code class="language-plaintext highlighter-rouge">_data/portfolio.yml</code>, etc.) for easy updates.</li>
+</ul>
+
+<h2 id="5-design-guidelines">5. Design Guidelines</h2>
+<ul>
+  <li>Clean, modern, professional aesthetic.</li>
+  <li>Consistent color palette and typography.</li>
+  <li>Responsive/mobile-friendly layout.</li>
+</ul>
+
+<h2 id="6-future-proofing">6. Future-Proofing</h2>
+<ul>
+  <li>Keep content and data decoupled from layout for easy migration.</li>
+  <li>Use includes/partials for repeated elements (nav, footer, team cards).</li>
+  <li>Document any custom code or plugins used.</li>
+</ul>
+
+<hr />
+
+<h2 id="7-deployment">7. Deployment</h2>
+<ul>
+  <li>Hosted on GitHub Pages (branch: <code class="language-plaintext highlighter-rouge">main</code> or <code class="language-plaintext highlighter-rouge">gh-pages</code>).</li>
+  <li>Custom domain (optional).</li>
+  <li><strong>Configuration (<code class="language-plaintext highlighter-rouge">_config.yml</code>):</strong>
+    <ul>
+      <li>For deployment to a subpath (e.g., <code class="language-plaintext highlighter-rouge">username.github.io/repositoryname/</code> or <code class="language-plaintext highlighter-rouge">customdomain.com/repositoryname/</code>):
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">url</code>: Set to the main domain (e.g., <code class="language-plaintext highlighter-rouge">https://username.github.io</code> or <code class="language-plaintext highlighter-rouge">https://customdomain.com</code>).</li>
+          <li><code class="language-plaintext highlighter-rouge">baseurl</code>: Set to the repository name/subpath (e.g., <code class="language-plaintext highlighter-rouge">"/repositoryname"</code>).</li>
+        </ul>
+      </li>
+      <li>For deployment to a root custom domain (e.g., <code class="language-plaintext highlighter-rouge">www.yourprojectdomain.com/</code>):
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">url</code>: Set to the full custom domain (e.g., <code class="language-plaintext highlighter-rouge">https://www.yourprojectdomain.com</code>).</li>
+          <li><code class="language-plaintext highlighter-rouge">baseurl</code>: Set to <code class="language-plaintext highlighter-rouge">""</code> (empty string).</li>
+          <li>A <code class="language-plaintext highlighter-rouge">CNAME</code> file containing the custom domain (e.g., <code class="language-plaintext highlighter-rouge">www.yourprojectdomain.com</code>) must be present in the repository root.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="8-migration-plan-for-future">8. Migration Plan (for future)</h2>
+<ul>
+  <li>If advanced features are needed, migrate content to a more dynamic stack.</li>
+  <li>Keep all data in portable formats (Markdown, YAML, JSON).</li>
+</ul>
+
+<hr />
+
+<h2 id="9-project-checkpoints--updates">9. Project Checkpoints / Updates</h2>
+
+<h3 id="checkpoint-initial-structure-implemented-2024-05-07">Checkpoint: Initial Structure Implemented (2024-05-07)</h3>
+
+<p><strong>What’s been completed:</strong></p>
+<ul>
+  <li>All main pages scaffolded: Home, About, Services, Portfolio, Blog, Contact, Careers (with placeholder content).</li>
+  <li>Persistent header/navigation bar and footer (with social links) implemented as includes.</li>
+  <li>Responsive, modern CSS for header and footer.</li>
+  <li><code class="language-plaintext highlighter-rouge">_data/</code> directory with YAML files for team, portfolio, and services (with sample data).</li>
+  <li><code class="language-plaintext highlighter-rouge">assets/images/</code> directory created for future images.</li>
+  <li>All content in Markdown or YAML for easy editing.</li>
+</ul>
+
+<p><strong>Deviations from plan:</strong></p>
+<ul>
+  <li>No major deviations. All foundational structure matches the plan.</li>
+</ul>
+
+<p><strong>Next steps:</strong></p>
+<ul>
+  <li>Render data from YAML files on relevant pages (e.g., team on About, services on Services, portfolio on Portfolio).</li>
+  <li>Add real or sample images and update data files.</li>
+  <li>Flesh out page content and add more design polish.</li>
+  <li>Set up deployment to GitHub Pages for live preview.</li>
+</ul>
+
+<p><strong>Notes:</strong></p>
+<ul>
+  <li>This checkpoint documents the completion of the initial project skeleton. All future changes and customizations should be recorded in this section.</li>
+</ul>
+
+<h3 id="checkpoint-local-environment--config-update-2024-05-13">Checkpoint: Local Environment &amp; Config Update (2024-05-13)</h3>
+
+<p><strong>What’s been completed:</strong></p>
+<ul>
+  <li>Set up local Ruby development environment using <code class="language-plaintext highlighter-rouge">rbenv</code> (Ruby 3.3.8).</li>
+  <li>Resolved <code class="language-plaintext highlighter-rouge">bundler</code> and <code class="language-plaintext highlighter-rouge">jekyll</code> gem installation issues.</li>
+  <li>Successfully ran the Jekyll site locally.</li>
+  <li>Updated <code class="language-plaintext highlighter-rouge">index.markdown</code> with new landing page content from <code class="language-plaintext highlighter-rouge">evernialanding.md</code>.</li>
+  <li>Configured <code class="language-plaintext highlighter-rouge">_config.yml</code> with correct <code class="language-plaintext highlighter-rouge">url</code> and <code class="language-plaintext highlighter-rouge">baseurl</code> for deployment to <code class="language-plaintext highlighter-rouge">https://oakmoss.ca/evernia</code>.</li>
+  <li>Pushed all changes to GitHub.</li>
+</ul>
+
+<p><strong>Deviations from plan:</strong></p>
+<ul>
+  <li>Encountered and resolved Ruby environment and bundler versioning issues.</li>
+</ul>
+
+<p><strong>Next steps:</strong></p>
+<ul>
+  <li>Verify site functionality and appearance on <code class="language-plaintext highlighter-rouge">https://www.everniadesign.com</code> after DNS propagation and GitHub Pages update.</li>
+  <li>Address SASS deprecation warnings from the Minima theme (consider updating theme or overriding styles).</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">favicon.ico</code>.</li>
+  <li>Render data from YAML files on relevant pages (Services, Portfolio).</li>
+  <li>Flesh out remaining page content.</li>
+</ul>
+
+<p><strong>Notes:</strong></p>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">CNAME</code> file and updated <code class="language-plaintext highlighter-rouge">_config.yml</code> (empty <code class="language-plaintext highlighter-rouge">baseurl</code>, correct <code class="language-plaintext highlighter-rouge">url</code>) are critical for custom domain functionality.</li>
+  <li>SASS deprecation warnings from Minima 2.5.2 are present but not currently breaking the build.</li>
+</ul>
+
+<hr />
+
+<h2 id="10-maintenance">10. Maintenance</h2>
+<ul>
+  <li><strong>Theme Updates:</strong> Periodically check for updates to the Jekyll theme (e.g., Minima) to incorporate bug fixes, new features, or address deprecations (like the current Sass warnings).</li>
+  <li><strong>Dependency Review:</strong> Regularly review and update gems in <code class="language-plaintext highlighter-rouge">Gemfile</code> using <code class="language-plaintext highlighter-rouge">bundle update</code> (especially the <code class="language-plaintext highlighter-rouge">github-pages</code> gem) to ensure compatibility and security.</li>
+  <li><strong>Build Log Monitoring:</strong> When changes are pushed, check GitHub Actions build logs for any new warnings or errors that might indicate emerging issues with dependencies or Jekyll itself.</li>
+  <li><strong>Content Audit:</strong> Periodically review content for accuracy, relevance, and broken links.</li>
+</ul>
+
+<hr />
+
+<h1 id="instructions">Instructions</h1>
+<ul>
+  <li>Follow this structure for all new pages and features.</li>
+  <li>Document any deviations or customizations in this file.</li>
+  <li>Update this file as the project evolves.</li>
+</ul>
+
+  </div>
+
+</article>
+
+  </div>
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Evernia Design. All rights reserved.</p>
+    <ul class="footer-social">
+      <li><a href="https://x.com/UnblockedCarver">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/jessejamesboyes/">LinkedIn</a></li>
+      <li><a href="https://github.com/GitRealHappy">GitHub</a></li>
+    </ul>
+  </div>
+</footer> 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+  });
+</script>
+</body>
+</html> 
