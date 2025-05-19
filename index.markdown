@@ -6,7 +6,7 @@ layout: default
 title: Evernia Design
 ---
 
-# Canada Based Web Development for Service Professionals and Forward Thinking Entrepeneurs
+# Web Development for Service Professionals and Forward Thinking Entrepeneurs
 
 ### **Is Your Outdated Website Costing You Clients Every Single Day? Discover How a Blazing-Fast, Custom Site Can Double Your Bookings – Without The Usual Tech Headaches!**
 
@@ -34,7 +34,7 @@ An embarrassment.
 
   - Do you break out in a cold sweat just _thinking_ about making simple updates? Or have you been burned by unreliable developers who disappear when you need them most, leaving your site vulnerable to hackers and slowly dying in search engine rankings?
 
-  - Are you pouring money into ads, only to send people to a website that leaks potential customers like a sieve because it's not designed to convert?
+  - Are you pouring money into ads, only to send people to a website that leaks potential customers like a sieve because it's not designed to convert them?
 
 If you nodded along to any of that, you're not alone. And it's certainly not your fault.
 
