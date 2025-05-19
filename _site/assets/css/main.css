@@ -1,9 +1,19 @@
 /* Evernia Design - Main Stylesheet */
 
+:root {
+  --sky-blue-light: #E0F2FE; /* Very light sky blue for gradients/backgrounds */
+  --sky-blue-accent: #7CB9E8; /* Our main sky blue for accents */
+  --primary-dark-blue: #004080; /* Main text, CTAs */
+  --secondary-blue-gray: #5A768F; /* Secondary text */
+  --neutral-light-gray: #F4F8FA; /* Light section backgrounds */
+  --neutral-white: #FFFFFF;
+  --text-on-dark-bg: #FFFFFF; /* For text on dark blue CTAs */
+}
+
 body {
   font-family: 'Lora', serif;
-  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #2d3a4a;
+  background: linear-gradient(120deg, var(--sky-blue-light) 0%, var(--neutral-white) 100%);
+  color: var(--primary-dark-blue);
   margin: 0;
   padding: 0;
 }
@@ -14,7 +24,7 @@ body {
   justify-content: space-between;
   min-height: 70vh;
   padding: 4rem 8vw 2rem 8vw;
-  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(120deg, var(--sky-blue-light) 0%, var(--neutral-white) 100%); /* Matched to body */
 }
 .hero-content {
   max-width: 50%;
@@ -23,15 +33,16 @@ body {
   font-size: 3rem;
   margin-bottom: 0.5em;
   letter-spacing: 0.02em;
+  color: var(--primary-dark-blue); /* Ensure headings use the new primary color */
 }
 .hero-content .subtitle {
   font-size: 1.5rem;
-  color: #4e5d6c;
+  color: var(--secondary-blue-gray);
   margin-bottom: 1.5em;
 }
 .cta-button {
-  background: #2d3a4a;
-  color: #fff;
+  background: var(--primary-dark-blue);
+  color: var(--text-on-dark-bg);
   padding: 0.75em 2em;
   border-radius: 2em;
   text-decoration: none;
@@ -41,7 +52,8 @@ body {
   box-shadow: 0 2px 8px rgba(45,58,74,0.08);
 }
 .cta-button:hover {
-  background: #4e5d6c;
+  background: var(--sky-blue-accent);
+  color: var(--primary-dark-blue); /* Change text color on hover for better contrast with sky blue */
   transform: translateY(-2px) scale(1.04);
 }
 .hero-art {
@@ -67,23 +79,24 @@ body {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-family: 'Lora', serif;
+  color: var(--primary-dark-blue);
 }
 .intro p {
   font-size: 1.2rem;
-  color: #4e5d6c;
+  color: var(--secondary-blue-gray);
   max-width: 600px;
   margin: 0 auto;
 }
 
 .services {
-  background: #f8fafc;
+  background: var(--neutral-light-gray);
   padding: 4rem 2vw 4rem 2vw;
 }
 .services h2 {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  color: #2d3a4a;
+  color: var(--primary-dark-blue);
 }
 .service-list {
   display: flex;
@@ -93,7 +106,7 @@ body {
   margin-bottom: 2rem;
 }
 .service {
-  background: #fff;
+  background: var(--neutral-white);
   border-radius: 1.2rem;
   box-shadow: 0 2px 12px rgba(45,58,74,0.07);
   padding: 2rem 1.5rem;
@@ -107,18 +120,18 @@ body {
 .service h3 {
   font-size: 1.15rem;
   margin-bottom: 1rem;
-  color: #3a4a5c;
+  color: var(--primary-dark-blue);
 }
 .service ul {
   padding-left: 1.2em;
   margin: 0;
-  color: #4e5d6c;
+  color: var(--secondary-blue-gray);
   font-size: 1rem;
 }
 .services-summary {
   text-align: center;
   font-size: 1.1rem;
-  color: #3a4a5c;
+  color: var(--primary-dark-blue);
   margin-bottom: 2rem;
   max-width: 700px;
   margin-left: auto;
@@ -142,7 +155,7 @@ body {
 
 /* Header & Navigation */
 .site-header {
-  background: #fff;
+  background: var(--neutral-white);
   box-shadow: 0 2px 8px rgba(45,58,74,0.06);
   position: sticky;
   top: 0;
@@ -157,7 +170,7 @@ body {
 .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2d3a4a;
+  color: var(--primary-dark-blue);
   text-decoration: none;
   letter-spacing: 0.04em;
 }
@@ -169,7 +182,7 @@ body {
   padding: 0;
 }
 .nav-links li a {
-  color: #2d3a4a;
+  color: var(--primary-dark-blue);
   text-decoration: none;
   font-weight: 500;
   font-size: 1.05rem;
@@ -178,8 +191,8 @@ body {
   border-radius: 0.3em;
 }
 .nav-links li a:hover, .nav-links li a:focus {
-  background: #f5f7fa;
-  color: #4e5d6c;
+  background: var(--sky-blue-light);
+  color: var(--primary-dark-blue); /* Keep text dark for readability on light blue */
 }
 
 /* Hamburger Menu Styles */
@@ -196,7 +209,7 @@ body {
   position: relative;
   width: 24px;
   height: 2px;
-  background: #333; /* Adjust color as needed */
+  background: var(--primary-dark-blue);
 }
 
 .hamburger::before,
@@ -205,7 +218,7 @@ body {
   position: absolute;
   width: 24px;
   height: 2px;
-  background: #333; /* Adjust color as needed */
+  background: var(--primary-dark-blue);
   left: 0;
 }
 
@@ -225,7 +238,7 @@ body {
     position: absolute;
     top: 60px; /* Adjust based on header height */
     left: 0;
-    background-color: #f9f9f9; /* Adjust background as needed */
+    background-color: var(--neutral-light-gray); /* Mobile menu background */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }

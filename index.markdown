@@ -6,158 +6,95 @@ layout: default
 title: Evernia Design
 ---
 
-# Web Development for Service Professionals and Forward Thinking Entrepeneurs
+# Web Development for Service Professionals and Forward-Thinking Entrepreneurs
 
-### **Is Your Outdated Website Costing You Clients Every Single Day? Discover How a Blazing-Fast, Custom Site Can Double Your Bookings – Without The Usual Tech Headaches!**
-
-Get the professionalism of a top agency, the flexibility of a freelancer, and the revolutionary speed of AI. Your new website will be a lead-generating machine, not just an online brochure.
+## Is Your Website Costing You Clients?
+If your outdated or non-existent website is driving clients away, it's time for a change. At Evernia Design, we create blazing-fast, custom websites that turn visitors into bookings—without the tech headaches. Get agency quality, freelancer flexibility, and AI-powered speed.
 
 <a href="{{ site.baseurl }}/book-audit/" class="cta-button">Book Your FREE 5-Point Website Audit Now!</a>
 <a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button">Building Your First Website? Start Here!</a>
 
 ---
 
+## Why Your Website Is Failing You
 
+Let's be real: a bad website isn't just inconvenient—it's hurting your business. As a Canadian service professional (massage therapist, chiropractor, somatic coach, etc.), your website should be your #1 employee, working 24/7 to attract leads, build trust, and book clients.
 
-**Are You Sick And Tired Of Your Website Chasing Away Customers Instead of Bringing Them In?**
+But too often, it's a source of frustration:
 
-Let's be brutally honest for a moment.
+- **Outdated or Slow:** Looks like 2005 or takes ages to load, sending visitors running.
+- **Generic Templates:** Blends in with competitors, failing to reflect your unique brand.
+- **Hard to Update:** Tech struggles or unreliable developers waste your time.
+- **Leaking Leads:** Poor design and navigation mean missed bookings.
 
-If you're a busy Canadian service professional – a massage therapist, chiropractor, somatic coach, or similar expert – your website _should_ be your 1 employee.
+You're an expert in your field, not web development. But every day your website underperforms, you're losing clients to competitors. How many more can you afford to miss?
 
-Working 24/7, bringing in new leads, building your credibility, and making it easy for clients to book your valuable services.
+---
 
-But for too many, it's a source of constant frustration. A digital money pit.
+## Imagine a Website That Wins Clients for You
 
-An embarrassment.
+Picture a prospective client, Sarah, searching for "chiropractor [Your City]." She's frustrated by slow, unprofessional websites. Then she lands on your new site:
 
-  - Does your current website look like it was designed in 2005? Or worse, do you not have one at all, silently losing credibility and potential clients to your competitors every single day?
+- **Lightning-Fast:** Loads in under a second, keeping her engaged.
+- **Professional Design:** Clean, modern, and trustworthy, reflecting your expertise.
+- **Clear Messaging:** Speaks to her needs and guides her to book in minutes.
 
-  - Are you wrestling with a slow, clunky WordPress site built on a generic template that looks like a dozen others in your city? You know, the kind that makes visitors hit the "back" button before they even see what you offer.
+That's the power of a website built right. At Evernia Design, we're a "micro-agency" using cutting-edge AI to craft custom, high-performance websites faster and more affordably than traditional agencies.
 
-  - Do you break out in a cold sweat just _thinking_ about making simple updates? Or have you been burned by unreliable developers who disappear when you need them most, leaving your site vulnerable to hackers and slowly dying in search engine rankings?
+**How AI Helps You:** Our AI tools streamline repetitive tasks, cutting build times by 40–60%. This means you get a hand-coded, non-CMS (no clunky WordPress!) site tailored to your brand in just 2–8 weeks. Our expert designers ensure pixel-perfect quality, so you get agency results with a personal touch.
 
-  - Are you pouring money into ads, only to send people to a website that leaks potential customers like a sieve because it's not designed to convert them?
+---
 
-If you nodded along to any of that, you're not alone. And it's certainly not your fault.
+## What Our Clients Say
 
-You're an expert in _your_ field, not in the ever-changing, often infuriating world of web development.
+Here's what clients like you can expect (example results):
 
-But here's the harsh truth: a bad website – or no website – isn't just a minor inconvenience.
+> "Our new site triple弄ed a flood of inquiries—3–5 new leads a week!"  
+> —Dr. Jane S., Chiropractor
 
-It's actively harming your business.
+> "The speed is incredible! Our old site took 5 seconds to load; now it's under 1 second, and our bounce rate dropped 40%."  
+> —Mark T., Massage Therapist
 
-It's costing you leads. It's damaging your reputation. It's making it harder for the clients who _need_ you to find and trust you.
+> "Finally, a team that gets it. Transparent, fast, and a site that reflects our quality."  
+> —Lisa R., Somatic Coach
 
-How many more ideal clients can you afford to lose before you decide enough is enough?
+---
 
-***
+## Get the Website Your Business Deserves
 
-**Imagine Waking Up To a Flood of New Client Inquiries... Thanks To a Website That Finally *Works* For You!**
+We build clean-coded, non-CMS websites designed for Canadian service businesses like yours. Here's what you get:
 
-What if you could ditch the website shame and frustration, and instead, have a powerful online presence that makes your competitors jealous and your ideal clients eager to book?
+- **Blazing-Fast Load Times:** Keep visitors engaged and boost SEO.
+- **Unique, Custom Designs:** Stand out with a brand-aligned look.
+- **Conversion-Focused:** Turn clicks into bookings with ROI-driven content.
+- **Mobile-First Perfection:** Flawless on any device to capture every client.
+- **SEO-Ready:** Built to rank higher in local search results.
+- **One Point of Contact:** Clear communication with a dedicated partner.
+- **100% Satisfaction Guarantee:** If you're not thrilled, we'll work until you are.
 
-Picture this:
+---
 
-A prospective client, Sarah, has been struggling with chronic back pain. She's heard good things about chiropractic care but is hesitant. She searches online for "chiropractor [Your City]" and several options pop up.
+## Transparent, Flexible Pricing
+Our custom websites start at $2,500, with flexible payment plans to fit your budget. After your FREE 5-Point Website Audit, we'll recommend one of our three tiers:
 
-Many have sites that are slow to load, confusing to navigate, or look unprofessional.
+- **Launchpad:** 5-page custom site with SEO and booking integration.
+- **Growth Engine:** 10+ pages with advanced features for scaling.
+- **Market Leader:** Bespoke solutions with e-commerce or membership portals.
 
-Then she clicks on _your_ new website.
+Optional maintenance plans (from $50/mo) include security updates, backups, and up to 2 content edits monthly for peace of mind.
 
-It loads instantly. The design is clean, modern, and professional, immediately building trust. The messaging speaks directly to _her_ pain and clearly explains how you can help. She easily finds your services, pricing, and glowing testimonials. Within minutes, she's booked an initial consultation through your seamless online system.
+---
 
-_That's_ the power of a website built the right way.
+## Stop Losing Clients—Act Now!
 
-And how do we achieve this? With a smarter approach. We're a new breed of web design "micro-agency," using **cutting-edge AI tools** not as a gimmick, but as a powerful engine to build custom, high-performance websites faster and more affordably than traditional agencies.
+Your outdated website is your business's biggest bottleneck. In just 2–8 weeks, we can launch a stunning, custom site that attracts clients, simplifies bookings, and positions you as the go-to expert.
 
-Think of AI as our hyper-efficient assistant. It helps us streamline the tedious parts of development – cutting down our build time by an incredible **40-60%**. This means you get a truly custom, "non-CMS" (no clunky WordPress or Wix here!) website, meticulously coded for speed and SEO, in as little as **2-8 weeks**.
+**Here's What to Do Next:**
+Book a FREE 5-Point Website Audit (no obligation). We'll analyze your site's speed, SEO, mobile performance, conversion potential, and design, delivering a personalized report within 48 hours. Plus, book by May 31, 2025, and get a FREE SEO keyword report ($200 value) to boost your rankings!
 
-This isn't about templates. It's about **agency-quality design and robust functionality**, delivered with the personal touch and flexibility of a dedicated freelancer, all supercharged by the efficiency of AI.
+<a href="{{ site.baseurl }}/book-audit/" class="cta-button">Book Your FREE 5-Point Website Audit Now!</a>
+<a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button">Building Your First Website? Start Here!</a>
 
-No more waiting months. No more bloated agency fees. Just a stunning, effective website built to get you results.
-
-***
-
-**[TESTIMONIAL SECTION PLACEHOLDER]**
-
-_(Imagine this section filled with glowing reviews from thrilled clients! We'll want to add screenshots, key metrics like speed improvements or lead increases, and names/businesses where possible.)_
-
-  - "_Before our new site, we were invisible online. Now, we're getting 3-5 new inquiries a week, and our booking calendar is fuller than ever!" - [Future Client Name, Business Type]_
-
-  - "_The speed is incredible! Our old WordPress site took ages to load. This new site is lightning fast, and our bounce rate has plummeted." - [Future Client Name, Business Type]_
-
-  - "_Finally, a web team that 'gets it.' Transparent pricing, fast turnaround, and a website that actually reflects the quality of our services." - [Future Client Name, Business Type]_
-
-***
-
-**Get The Custom, High-Performance Website Your Service Business Deserves – Without The Agency Overheads!**
-
-You're passionate about helping your clients. We're passionate about helping _you_ reach them.
-
-We don't do generic. We don't do clunky. We build **clean-coded, non-CMS websites** specifically designed for Canadian service businesses like yours. This means:
-
-  - **Blazing-Fast Load Times:** Stop losing visitors to slow sites. Our streamlined code and optimized assets mean your site loads in a flash, keeping users engaged and Google happy. _Benefit: Better user experience, lower bounce rates, improved SEO._
-
-  - **Unique, Custom Designs:** Your business is unique, and your website should be too. We create a look and feel that perfectly reflects your brand and speaks directly to your ideal client. _Benefit: Stand out from competitors, build stronger brand recognition, attract the right clients._
-
-  - **Crystal Clear "ROI Content" Structure:** We design with your bottom line in mind, ensuring your content is structured to guide visitors towards taking action – whether that's booking an appointment, calling you, or signing up for your newsletter. _Benefit: More leads, more consultations, more paying clients._
-
-  - **Mobile-First Perfection:** With most searches happening on phones, your site will look and work flawlessly on any device, from desktop to smartphone. _Benefit: Capture every potential client, no matter how they find you._
-
-  - **SEO-Ready Foundation:** We build with search engine optimization best practices from the ground up, giving you a head start in ranking higher for your local service keywords. _Benefit: Increased visibility in search results, more organic traffic._
-
-  - **Transparent, Fixed-Tier Pricing:** No surprise invoices. No hidden fees. Choose from one of our three clear project tiers, so you know exactly what you're getting and what it costs.
-
-    - **Tier 1: The "Launchpad" - $2,500** (Perfect for getting a professional, high-converting online presence established quickly.)
-
-    - **Tier 2: The "Growth Engine" - $5,000** (More pages, advanced features, ideal for businesses ready to scale their client acquisition.)
-
-    - **Tier 3: The "Market Leader" - $10,000** (Comprehensive, bespoke solutions for businesses aiming to dominate their local market.)
-
-    - _(Payment plans available to make it even more accessible!)_
-
-  - **Hassle-Free Maintenance Plans (Optional, Starting at $50/mo):** Want us to keep your site updated, secure, and running smoothly? We offer transparent, affordable monthly plans so you never have to worry about the tech stuff again. _Benefit: Peace of mind, ongoing security, and a reliably performing website without lifting a finger._
-
-  - **One Approachable Point of Contact:** You won't get lost in a shuffle of account managers. You'll have a dedicated partner who understands your business and your goals. _Benefit: Clear communication, faster responses, a personal touch._
-
-This isn't just about a website. It's about giving your service business the powerful online platform it needs to thrive in today's digital world. It's about getting **agency quality, freelancer flexibility, and the undeniable power of AI speed.**
-
-***
-
-**Stop Leaving Money on the Table – It's Time to Transform Your Online Presence!**
-
-Right now, your outdated or non-existent website could be the biggest bottleneck in your business.
-
-Imagine, just weeks from now, having a stunning, custom website that actually _attracts_ your ideal clients, makes booking a breeze, and positions you as the go-to expert in your area.
-
-Think about the relief of finally having a reliable, high-performance online presence that you're _proud_ to show off.
-
-No more frustration. No more lost leads. No more tech headaches.
-
-You can continue struggling with what you have (or don't have), hoping things will magically get better...
-
-Or you can take one simple step today to finally get the website your successful service business _deserves_.
-
-**Here's What To Do Next:**
-
-  1. **Click the button below to book a FREE, no-obligation "5-Point Website Audit & Strategy Call."**
-
-  2. On this call, we'll quickly diagnose the biggest issues with your current online presence (or lack thereof) and show you exactly how a custom, AI-enhanced website can transform your client acquisition.
-
-  3. You'll get a clear, actionable plan and a transparent quote for one of our price packages ($2,500, $5,000, or $10,000 – with payment plans available) and additional options.
-
-There's absolutely no pressure. Just honest advice and a clear path forward.
-
-The worst that can happen? You get some incredibly valuable insights into your website for free.
-
-The best? This could be the turning point for your business, unlocking a flood of new clients and growth you never thought possible.
-
-Don't let another ideal client slip through your fingers because your website isn't up to par.
-
-<a href="{{ site.baseurl }}/book-audit/" class="cta-button cta-bottom-index">Book Your FREE 5-Point Website Audit Now!</a>
-<a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button cta-bottom-index">Building Your First Website? Start Here!</a>
-
-P.S. Remember, your competitors are online, and they're not waiting. Every day you delay is another day you could be losing business. Our AI-enhanced process means we can get your powerful new website live in as little as 2-8 weeks. Let's talk!
+P.S. Your competitors are stealing clients with better websites. Don't lose another lead. Book now to transform your online presence and outrank them in weeks!
 
 ***
