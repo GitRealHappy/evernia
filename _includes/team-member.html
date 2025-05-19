@@ -4,8 +4,10 @@
   <p class="team-role">{{ member.role }}</p>
   <p class="team-bio">{{ member.bio }}</p>
   <ul class="team-links">
-    {% if member.links.linkedin %}<li><a href="{{ member.links.linkedin }}" target="_blank">LinkedIn</a></li>{% endif %}
-    {% if member.links.twitter %}<li><a href="{{ member.links.twitter }}" target="_blank">Twitter</a></li>{% endif %}
-    {% if member.links.github %}<li><a href="{{ member.links.github }}" target="_blank">GitHub</a></li>{% endif %}
+    {% unless member.name == "Haggard Lumhoven" or member.name == "John Hidelgeiser" %}
+      {% if member.links.linkedin %}<li><a href="{{ member.links.linkedin }}" target="_blank">LinkedIn</a></li>{% endif %}
+      {% if member.links.twitter %}<li><a href="{{ member.links.twitter }}" target="_blank">Twitter</a></li>{% endif %}
+      {% if member.links.github %}<li><a href="{{ member.links.github }}" target="_blank">GitHub</a></li>{% endif %}
+    {% endunless %}
   </ul>
 </div> 

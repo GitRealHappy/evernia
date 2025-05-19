@@ -9,9 +9,26 @@ permalink: /team/
 We are a team of passionate web designers and developers dedicated to building beautiful, effective websites for our clients.
 
 ## Meet the Team
+
+<!-- Jesse Boyes Section -->
 <div class="team-list">
   {% for member in site.data.team %}
-    {% include team-member.html member=member %}
+    {% if member.name == "Jesse Boyes" %}
+      {% include team-member.html member=member %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<!-- AI Agents Section -->
+### Specially Engineered AI Agents
+<div style="margin-bottom:1em; color:#5A768F; font-size:1.05em;">
+  <strong>Disclaimer:</strong> The following team members are specially engineered AI agents, closely managed and supervised by Jesse Boyes to ensure quality and reliability in all client work.
+</div>
+<div class="team-list">
+  {% for member in site.data.team %}
+    {% if member.name == "Haggard Lumhoven" or member.name == "John Hidelgeiser" %}
+      {% include team-member.html member=member %}
+    {% endif %}
   {% endfor %}
 </div>
 

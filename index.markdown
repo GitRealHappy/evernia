@@ -11,8 +11,10 @@ title: Evernia Design
 ## Is Your Website Costing You Clients?
 If your outdated or non-existent website is driving clients away, it's time for a change. At Evernia Design, we create blazing-fast, custom websites that turn visitors into bookings—without the tech headaches. Get agency quality, freelancer flexibility, and AI-powered speed.
 
+<div class="cta-button-group">
 <a href="{{ site.baseurl }}/book-audit/" class="cta-button">Book Your FREE 5-Point Website Audit Now!</a>
 <a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button">Building Your First Website? Start Here!</a>
+</div>
 
 ---
 
@@ -42,21 +44,6 @@ Picture a prospective client, Sarah, searching for "chiropractor [Your City]." S
 That's the power of a website built right. At Evernia Design, we're a "micro-agency" using cutting-edge AI to craft custom, high-performance websites faster and more affordably than traditional agencies.
 
 **How AI Helps You:** Our AI tools streamline repetitive tasks, cutting build times by 40–60%. This means you get a hand-coded, non-CMS (no clunky WordPress!) site tailored to your brand in just 2–8 weeks. Our expert designers ensure pixel-perfect quality, so you get agency results with a personal touch.
-
----
-
-## What Our Clients Say
-
-Here's what clients like you can expect (example results):
-
-> "Our new site triple弄ed a flood of inquiries—3–5 new leads a week!"  
-> —Dr. Jane S., Chiropractor
-
-> "The speed is incredible! Our old site took 5 seconds to load; now it's under 1 second, and our bounce rate dropped 40%."  
-> —Mark T., Massage Therapist
-
-> "Finally, a team that gets it. Transparent, fast, and a site that reflects our quality."  
-> —Lisa R., Somatic Coach
 
 ---
 
@@ -92,8 +79,10 @@ Your outdated website is your business's biggest bottleneck. In just 2–8 weeks
 **Here's What to Do Next:**
 Book a FREE 5-Point Website Audit (no obligation). We'll analyze your site's speed, SEO, mobile performance, conversion potential, and design, delivering a personalized report within 48 hours. Plus, book by May 31, 2025, and get a FREE SEO keyword report ($200 value) to boost your rankings!
 
+<div class="cta-button-group">
 <a href="{{ site.baseurl }}/book-audit/" class="cta-button">Book Your FREE 5-Point Website Audit Now!</a>
 <a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button">Building Your First Website? Start Here!</a>
+</div>
 
 P.S. Your competitors are stealing clients with better websites. Don't lose another lead. Book now to transform your online presence and outrank them in weeks!
 

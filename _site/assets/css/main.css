@@ -421,4 +421,30 @@ p {
   /* You can add specific overrides here if needed */
   width: auto;
   cursor: pointer;
+}
+
+.cta-button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5em 0;
+}
+
+.cta-button-group .cta-button {
+  flex: 1 1 220px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .cta-button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .cta-button-group .cta-button {
+    font-size: 1rem;
+    padding: 0.65em 1.2em;
+    flex: unset;
+    width: 100%;
+    box-sizing: border-box;
+  }
 } 
