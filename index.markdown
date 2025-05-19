@@ -12,6 +12,9 @@ title: Evernia Design
 
 Get the professionalism of a top agency, the flexibility of a freelancer, and the revolutionary speed of AI. Your new website will be a lead-generating machine, not just an online brochure.
 
+<a href="{{ site.baseurl }}/book-audit/" class="cta-button">Book Your FREE 5-Point Website Audit Now!</a>
+<a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button">Building Your First Website? Start Here!</a>
+
 ---
 
 
