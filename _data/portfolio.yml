@@ -1,8 +1,14 @@
-- title: Project Alpha
-  description: "A modern website for a local business."
-  image: alpha.jpg
-  link: "#"
-- title: Project Beta
-  description: "E-commerce platform for a boutique retailer."
-  image: beta.jpg
-  link: "#" 
+- title: "Healing House Abby"
+  description: "A professional website for a massage therapy clinic, featuring service information, booking details, and a calming, wellness-focused design."
+  image: "healinghouseindex.png"
+  link: "https://healinghouseabby.ca/"
+  technologies: "Jekyll, HTML/CSS, Responsive Design"
+  type: "Website Design & Development"
+
+# More projects coming soon...
+# - title: "Project Name"
+#   description: "Project description"
+#   image: "filename.jpg"
+#   link: "https://example.com"
+#   technologies: "Tech stack used"
+#   type: "Project type" 
