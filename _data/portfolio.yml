@@ -5,6 +5,20 @@
   technologies: "Jekyll, HTML/CSS, Responsive Design"
   type: "Website Design & Development"
 
+- title: "Oakmoss"
+  description: "A portfolio website for a local artist, featuring their artwork, bio, blog, and contact information."
+  image: "oakmossindex.png"
+  link: "https://oakmoss.ca/"
+  technologies: "Jekyll, HTML/CSS, Responsive Design"
+  type: "Website Design, Development, & SEO"
+
+- title: "Donna May Paints"
+  description: "A vibrant portfolio website for Donna May, a local painter, showcasing her diverse collections, artist bio, and blog."
+  image: "donnamayindex.png"
+  link: "https://donnamaypaints.ca/"
+  technologies: "Jekyll, HTML/CSS"
+  type: "Design & SEO"
+
 # More projects coming soon...
 # - title: "Project Name"
 #   description: "Project description"
