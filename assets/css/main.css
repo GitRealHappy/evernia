@@ -561,6 +561,10 @@ p {
   .container {
     padding: 0 1rem;
   }
+
+  .nav-logo {
+    font-size: 1.6rem;
+  }
   
   .hero {
     padding: 6rem 0;
