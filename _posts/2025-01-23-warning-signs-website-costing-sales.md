@@ -13,7 +13,7 @@ featured_image: "/assets/images/blog/websitebounce.png"
 
 In today's hyper-competitive digital marketplace, your website is often the first — and sometimes the only — opportunity you have to win over new clients. For Canadian service businesses, especially those in the $100K–$2M annual revenue range, a website isn't a "nice-to-have": It's your most valuable salesperson, your credibility engine, and the core of your brand's first impression.
 
-But here's the hard truth: **An underperforming website can be quietly draining your sales pipeline.** According to a [recent CIRA study](https://www.cira.ca/resources/corporate/factbook/canadas-internet-factbook-2023), 67% of Canadians say they're less likely to engage with a business that has an outdated or hard-to-use website. That's not just a lost lead—it's a lost sale, referral, and reputation.
+But here's the hard truth: **An underperforming website can be quietly draining your sales pipeline.** According to studies, the majority of people say they're less likely to engage with a business that has an outdated or hard-to-use website. That's not just a lost lead—it's a lost sale, referral, and reputation.
 
 If any of the red flags below sound familiar, you might already be losing business. The good news? Every issue has a clear solution, and you don't have to go it alone.
 
