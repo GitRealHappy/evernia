@@ -6,6 +6,7 @@ Evernia Design now features a custom SVG icon system that replaces emoji usage t
 - **Performance**: Optimized vector graphics that scale perfectly at any size
 - **Consistency**: Uniform styling and behavior across all icons
 - **Accessibility**: Better screen reader support and semantic meaning
+- **Advanced Animations**: Sophisticated micro-interactions and scroll-triggered effects
 
 ## Icon Sprite Location
 - **File**: `/assets/images/icons.svg`
@@ -50,47 +51,154 @@ Evernia Design now features a custom SVG icon system that replaces emoji usage t
 <svg class="icon icon-xl"><use href="#icon-lightning"></use></svg>  <!-- 48px -->
 ```
 
-### With Animations
+### With Advanced Animations
 ```html
-<svg class="icon icon-rotate"><use href="#icon-lightning"></use></svg>  <!-- Spinning -->
-<svg class="icon icon-pulse"><use href="#icon-lightning"></use></svg>   <!-- Pulsing -->
-```
+<!-- Animated Icons -->
+<svg class="icon icon-animated"><use href="#icon-lightning"></use></svg>
 
-### In Service Cards
-```html
-<div class="service-icon">
-  <svg class="icon"><use href="#icon-lightning"></use></svg>
+<!-- Hover Effects -->
+<svg class="icon icon-hover-lift"><use href="#icon-lightning"></use></svg>
+<svg class="icon icon-hover-pulse"><use href="#icon-lightning"></use></svg>
+<svg class="icon icon-hover-spin"><use href="#icon-lightning"></use></svg>
+<svg class="icon icon-hover-bounce"><use href="#icon-lightning"></use></svg>
+<svg class="icon icon-hover-glow"><use href="#icon-lightning"></use></svg>
+
+<!-- Enhanced Service Icons -->
+<div class="service-icon service-icon-enhanced">
+  <svg class="icon icon-animated"><use href="#icon-lightning"></use></svg>
 </div>
 ```
 
-## Styling System
+## Advanced Animation System
 
-### Size Classes
-- `.icon-sm` - 16x16px (small UI elements)
-- `.icon-md` - 24x24px (standard inline icons)
-- `.icon-lg` - 32x32px (feature highlights)
-- `.icon-xl` - 48x48px (hero sections)
+### Scroll-Triggered Animations
+Elements automatically animate into view when scrolled into viewport:
+```html
+<!-- Basic scroll animation -->
+<div class="animate-on-scroll">Content animates in</div>
 
-### Animation Classes
-- `.icon-rotate` - Continuous rotation
-- `.icon-pulse` - Opacity pulsing effect
-
-### Color Control
-Icons inherit the `currentColor` CSS property, making them responsive to text color changes:
-
-```css
-.text-gold .icon { color: var(--champagne-gold); }
-.text-blue .icon { color: var(--electric-blue); }
-.text-purple .icon { color: var(--royal-purple); }
+<!-- Staggered animations -->
+<div class="animate-cascade">
+  <div class="animate-on-scroll">Item 1</div>
+  <div class="animate-on-scroll">Item 2</div>
+  <div class="animate-on-scroll">Item 3</div>
+</div>
 ```
 
-## Service Icon Styling
-The `.service-icon` class provides special styling for service cards:
+### Interactive Effects
+```html
+<!-- Magnetic hover effect -->
+<div class="magnetic-effect">Follows cursor slightly</div>
 
-- **Background**: Gold to blue gradient
-- **Hover Effect**: Transforms to blue/purple gradient
-- **Animation**: Scale and color transition on hover
-- **Size**: Fixed 80px circle with 40px icon
+<!-- Ripple click effect -->
+<button class="btn ripple-effect">Click for ripple</button>
+
+<!-- 3D tilt on hover -->
+<div class="tilt-card">Tilts on hover</div>
+
+<!-- Text reveal animation -->
+<h2 class="text-reveal">Text with sweep effect</h2>
+```
+
+### Icon-Specific Animations
+Special animations trigger based on icon type:
+- **Lightning**: Flash effect on hover
+- **Rocket**: Launch animation on hover  
+- **Target**: Focus pulsing animation
+- **Analytics**: Growth scaling effect
+
+### Button Animations
+```html
+<!-- Icon slides right on hover -->
+<a class="btn btn-icon-slide">
+  Button Text 
+  <svg class="icon"><use href="#icon-arrow-right"></use></svg>
+</a>
+
+<!-- Icon rotates on hover -->
+<a class="btn btn-icon-rotate">
+  Button Text 
+  <svg class="icon"><use href="#icon-arrow-right"></use></svg>
+</a>
+```
+
+## Animation Classes
+
+### Hover Micro-Interactions
+- `.icon-hover-lift` - Lifts up with shadow
+- `.icon-hover-pulse` - Gentle pulsing effect
+- `.icon-hover-spin` - Continuous rotation
+- `.icon-hover-bounce` - Elegant bouncing
+- `.icon-hover-glow` - Glowing outline effect
+
+### Scroll Animations
+- `.animate-on-scroll` - Basic entrance animation
+- `.animate-cascade` - Staggered children animations
+- `.in-view` - Applied automatically when element enters viewport
+
+### Interactive Effects
+- `.magnetic-effect` - Subtle cursor following
+- `.ripple-effect` - Click ripple animation
+- `.tilt-card` - 3D hover tilt effect
+- `.text-reveal` - Text sweep reveal
+- `.parallax-icon` - Scroll parallax movement
+
+### State Animations
+- `.icon-loading` - Loading spinner state
+- `.icon-success` - Success pop animation
+- `.icon-error` - Error shake animation
+
+### Timing Utilities
+- `.animation-delay-100` through `.animation-delay-500`
+- `.animation-duration-fast/normal/slow`
+- `.animation-ease-premium` - Custom easing curves
+
+## Service Icon Styling
+The `.service-icon-enhanced` class provides advanced styling:
+
+- **Rotating Border**: Animated conic gradient border
+- **Hover Effects**: Scale, rotate, and glow transitions
+- **3D Transforms**: Sophisticated hover animations
+- **Performance**: GPU-accelerated animations
+
+## JavaScript Controller
+
+Access the animation controller globally:
+```javascript
+// Show loading state
+window.EverniaAnimations.showLoadingState(element);
+
+// Show success state  
+window.EverniaAnimations.showSuccessState(element);
+
+// Show error state
+window.EverniaAnimations.showErrorState(element);
+```
+
+## Performance Optimizations
+
+### Automatic Optimizations
+- **Intersection Observer**: Efficient scroll detection
+- **Animation Pausing**: Pauses when tab not visible
+- **Mobile Reduction**: Simplified animations on mobile
+- **Reduced Motion**: Respects user accessibility preferences
+
+### Manual Performance Controls
+```css
+@media (prefers-reduced-motion: reduce) {
+  /* Animations automatically disabled */
+}
+
+@media (max-width: 768px) {
+  /* Complex animations simplified */
+}
+```
+
+## Browser Support
+- **Modern Browsers**: Full support with hardware acceleration
+- **Safari**: Full support including backdrop-filter
+- **Mobile**: Optimized for touch interactions
+- **Accessibility**: Respects motion preferences
 
 ## Adding New Icons
 
@@ -98,54 +206,64 @@ The `.service-icon` class provides special styling for service cards:
 - **ViewBox**: Use `0 0 24 24` for consistency
 - **Style**: Line weight 2px, filled shapes where appropriate
 - **Colors**: Use `currentColor` and `white` with opacity for highlights
-- **Simplicity**: Keep designs clean and recognizable at small sizes
+- **Animation Ready**: Design for transform animations
 
-### 2. SVG Structure
+### 2. Animation Integration
 ```xml
 <symbol id="icon-name" viewBox="0 0 24 24">
   <path d="..." fill="currentColor"/>
-  <!-- Optional highlight elements -->
+  <!-- Animation-friendly structure -->
   <circle cx="..." cy="..." r="..." fill="white" opacity="0.9"/>
 </symbol>
 ```
 
-### 3. Integration Steps
-1. Add new `<symbol>` to `/assets/images/icons.svg`
-2. Follow naming convention: `icon-descriptive-name`
-3. Test at multiple sizes
-4. Update this documentation
+### 3. Custom Animation Effects
+Add specific animations in `/assets/css/animations.css`:
+```css
+.icon-newicon-effect:hover {
+  animation: custom-animation 1.5s ease-in-out;
+}
 
-## Performance Notes
-- **Sprite Loading**: Icons are loaded once per page via JavaScript fetch
-- **Caching**: SVG sprite is cached by the browser
-- **Size**: Current sprite ~3KB gzipped
-- **Rendering**: Hardware-accelerated SVG rendering
-
-## Browser Support
-- **Modern Browsers**: Full support (Chrome 55+, Firefox 55+, Safari 12+)
-- **Legacy Support**: Graceful degradation (IE11 with polyfill if needed)
-- **Mobile**: Full support on iOS Safari and Chrome Mobile
+@keyframes custom-animation {
+  /* Custom keyframes */
+}
+```
 
 ## Migration Notes
-The following emoji replacements have been completed:
-- ⚡ → `icon-lightning`
-- 🏪 → `icon-store`
-- 🔧 → `icon-tools`
-- 🎯 → `icon-target`
-- 📝 → `icon-content`
-- 🎨 → `icon-design`
-- 📈 → `icon-analytics`
-- 🛡️ → `icon-security`
-- 🚀 → `icon-rocket`
+All emoji replacements completed with enhanced animations:
+- ⚡ → `icon-lightning` (with flash effect)
+- 🏪 → `icon-store` (with scale effect)
+- 🔧 → `icon-tools` (with rotate effect)
+- 🎯 → `icon-target` (with focus effect)
+- 📝 → `icon-content` (with typing effect)
+- 🎨 → `icon-design` (with color effect)
+- 📈 → `icon-analytics` (with growth effect)
+- 🛡️ → `icon-security` (with pulse effect)
+- 🚀 → `icon-rocket` (with launch effect)
 
-## Future Enhancements
-1. **Icon Variants**: Outlined and filled versions
-2. **Theme Adaptation**: Automatic dark/light mode variants
-3. **Animation Library**: More sophisticated animations
-4. **Icon Font**: Optional webfont version for simpler implementation
-5. **Build Process**: Automated optimization and sprite generation
+## Animation Performance Guidelines
+
+### Best Practices
+1. **Use Transform Properties**: Better GPU acceleration
+2. **Avoid Layout Thrashing**: Stick to opacity and transforms
+3. **Limit Concurrent Animations**: Maximum 6 simultaneous
+4. **Progressive Enhancement**: Base functionality without animations
+
+### Implementation Examples
+```html
+<!-- Optimal: GPU-accelerated -->
+<div class="service-icon service-icon-enhanced">
+  <svg class="icon icon-animated"><use href="#icon-lightning"></use></svg>
+</div>
+
+<!-- Good: With fallbacks -->
+<div class="animate-on-scroll tilt-card magnetic-effect">
+  Content with multiple effects
+</div>
+```
 
 ---
 
 *Last Updated: January 2025*
-*Next Review: February 2025* 
+*Next Review: February 2025*
+*Animation System: Version 2.0* 

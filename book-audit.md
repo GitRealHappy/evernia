@@ -24,7 +24,9 @@ permalink: /book-audit/
           <h2 class="text-blue mb-3">What You'll Receive</h2>
           <div class="assessment-deliverables">
             <div class="deliverable-item">
-              <div class="deliverable-icon">🎯</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-target"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Competitive Positioning Analysis</h3>
                 <p class="text-muted">Deep dive into how your digital presence compares to premium competitors in your market.</p>
@@ -32,7 +34,9 @@ permalink: /book-audit/
             </div>
             
             <div class="deliverable-item">
-              <div class="deliverable-icon">📊</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-analytics"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Performance Metrics Audit</h3>
                 <p class="text-muted">Technical analysis of site speed, SEO performance, and conversion optimization opportunities.</p>
@@ -40,7 +44,9 @@ permalink: /book-audit/
             </div>
             
             <div class="deliverable-item">
-              <div class="deliverable-icon">💰</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-store"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Revenue Impact Assessment</h3>
                 <p class="text-muted">Quantified analysis of how digital improvements could impact your bottom line.</p>
@@ -48,7 +54,9 @@ permalink: /book-audit/
             </div>
             
             <div class="deliverable-item">
-              <div class="deliverable-icon">🚀</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-rocket"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Strategic Growth Roadmap</h3>
                 <p class="text-muted">Prioritized action plan with clear steps to elevate your digital presence.</p>
@@ -214,9 +222,16 @@ permalink: /book-audit/
 }
 
 .deliverable-icon {
-  font-size: 2.5rem;
   color: var(--electric-blue);
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deliverable-icon .icon {
+  width: 40px;
+  height: 40px;
 }
 
 .deliverable-content h3 {
@@ -312,7 +327,7 @@ textarea.form-input {
 
 @media (max-width: 768px) {
   .audit-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 2rem;
   }
   
@@ -332,6 +347,21 @@ textarea.form-input {
   
   .form-input {
     padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .audit-grid {
+    gap: 1.5rem;
+  }
+  
+  .deliverable-item {
+    padding: 1rem;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    font-size: 0.95rem;
   }
 }
 </style> 

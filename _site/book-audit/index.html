@@ -4,14 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strategic Digital Assessment</title>
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
   <link rel="icon" type="image/png" href="/assets/images/logosmall.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Strategic Digital Assessment" />
   <meta property="og:description" content="Comprehensive analysis of your digital presence with actionable recommendations. Complimentary assessment for ambitious businesses." />
-  <meta property="og:url" content="http://0.0.0.0:4000/book-audit/" />
+  <meta property="og:url" content="http://localhost:4000/book-audit/" />
   <meta property="og:site_name" content="Evernia Design" />
-  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta property="og:image" content="http://localhost:4000/assets/images/socialbanner.png" />
   <meta property="og:image:alt" content="Strategic Digital Assessment social preview" />
   <meta property="og:type" content="website" />
 
@@ -19,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Strategic Digital Assessment" />
   <meta name="twitter:description" content="Comprehensive analysis of your digital presence with actionable recommendations. Complimentary assessment for ambitious businesses." />
-  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/socialbanner.png" />
   <meta name="twitter:image:alt" content="Strategic Digital Assessment social preview" />
   
   <meta name="twitter:site" content="@UnblockedCarver" />
@@ -70,7 +71,9 @@
           <h2 class="text-blue mb-3">What You'll Receive</h2>
           <div class="assessment-deliverables">
             <div class="deliverable-item">
-              <div class="deliverable-icon">🎯</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-target"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Competitive Positioning Analysis</h3>
                 <p class="text-muted">Deep dive into how your digital presence compares to premium competitors in your market.</p>
@@ -78,7 +81,9 @@
             </div>
             
             <div class="deliverable-item">
-              <div class="deliverable-icon">📊</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-analytics"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Performance Metrics Audit</h3>
                 <p class="text-muted">Technical analysis of site speed, SEO performance, and conversion optimization opportunities.</p>
@@ -86,7 +91,9 @@
             </div>
             
             <div class="deliverable-item">
-              <div class="deliverable-icon">💰</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-store"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Revenue Impact Assessment</h3>
                 <p class="text-muted">Quantified analysis of how digital improvements could impact your bottom line.</p>
@@ -94,7 +101,9 @@
             </div>
             
             <div class="deliverable-item">
-              <div class="deliverable-icon">🚀</div>
+              <div class="deliverable-icon">
+                <svg class="icon icon-xl"><use href="#icon-rocket"></use></svg>
+              </div>
               <div class="deliverable-content">
                 <h3 class="text-gold">Strategic Growth Roadmap</h3>
                 <p class="text-muted">Prioritized action plan with clear steps to elevate your digital presence.</p>
@@ -260,9 +269,16 @@
 }
 
 .deliverable-icon {
-  font-size: 2.5rem;
   color: var(--electric-blue);
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deliverable-icon .icon {
+  width: 40px;
+  height: 40px;
 }
 
 .deliverable-content h3 {
@@ -358,7 +374,7 @@ textarea.form-input {
 
 @media (max-width: 768px) {
   .audit-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 2rem;
   }
   
@@ -378,6 +394,21 @@ textarea.form-input {
   
   .form-input {
     padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .audit-grid {
+    gap: 1.5rem;
+  }
+  
+  .deliverable-item {
+    padding: 1rem;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    font-size: 0.95rem;
   }
 }
 </style>
@@ -420,6 +451,9 @@ textarea.form-input {
           });
       });
     </script>
+
+    <!-- Premium Animation System -->
+    <script src="/assets/js/animations.js"></script>
 
   </body>
 

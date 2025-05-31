@@ -99,26 +99,6 @@ permalink: /contact/
           </div>
         </div>
         
-        <div class="glass-card mb-3">
-          <h3 class="text-purple mb-3">Direct Contact</h3>
-          <div class="contact-details">
-            <div class="contact-item">
-              <strong class="text-gold">Email:</strong>
-              <a href="mailto:hello@everniadesign.com" class="contact-link">hello@everniadesign.com</a>
-            </div>
-            
-            <div class="contact-item">
-              <strong class="text-gold">Response Time:</strong>
-              <span class="text-secondary">Within 24 hours</span>
-            </div>
-            
-            <div class="contact-item">
-              <strong class="text-gold">Consultation Hours:</strong>
-              <span class="text-secondary">Monday - Friday, 9 AM - 6 PM PST</span>
-            </div>
-          </div>
-        </div>
-        
         <div class="glass-card">
           <h3 class="text-gold mb-3">Ready to Get Started?</h3>
           <p class="text-muted mb-3">If you prefer a more structured approach, choose from our guided consultation paths:</p>
@@ -241,7 +221,7 @@ textarea.form-input {
 
 @media (max-width: 768px) {
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 2rem;
   }
   
@@ -251,6 +231,21 @@ textarea.form-input {
   
   .form-input {
     padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-grid {
+    gap: 1.5rem;
+  }
+  
+  .consultation-item {
+    padding: 1rem;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    font-size: 0.95rem;
   }
 }
 </style> 

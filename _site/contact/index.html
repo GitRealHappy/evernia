@@ -4,14 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Executive Consultation</title>
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
   <link rel="icon" type="image/png" href="/assets/images/logosmall.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Executive Consultation" />
   <meta property="og:description" content="Schedule your strategic consultation with Evernia Design. Premium web solutions for ambitious businesses." />
-  <meta property="og:url" content="http://0.0.0.0:4000/contact/" />
+  <meta property="og:url" content="http://localhost:4000/contact/" />
   <meta property="og:site_name" content="Evernia Design" />
-  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta property="og:image" content="http://localhost:4000/assets/images/socialbanner.png" />
   <meta property="og:image:alt" content="Executive Consultation social preview" />
   <meta property="og:type" content="website" />
 
@@ -19,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Executive Consultation" />
   <meta name="twitter:description" content="Schedule your strategic consultation with Evernia Design. Premium web solutions for ambitious businesses." />
-  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/socialbanner.png" />
   <meta name="twitter:image:alt" content="Executive Consultation social preview" />
   
   <meta name="twitter:site" content="@UnblockedCarver" />
@@ -141,26 +142,6 @@
               <h4 class="text-gold">Digital Transformation Workshop</h4>
               <p class="text-muted">Half-day intensive workshop for teams ready to elevate their entire digital strategy.</p>
               <span class="consultation-price">$2,500</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="glass-card mb-3">
-          <h3 class="text-purple mb-3">Direct Contact</h3>
-          <div class="contact-details">
-            <div class="contact-item">
-              <strong class="text-gold">Email:</strong>
-              <a href="mailto:hello@everniadesign.com" class="contact-link">hello@everniadesign.com</a>
-            </div>
-            
-            <div class="contact-item">
-              <strong class="text-gold">Response Time:</strong>
-              <span class="text-secondary">Within 24 hours</span>
-            </div>
-            
-            <div class="contact-item">
-              <strong class="text-gold">Consultation Hours:</strong>
-              <span class="text-secondary">Monday - Friday, 9 AM - 6 PM PST</span>
             </div>
           </div>
         </div>
@@ -287,7 +268,7 @@ textarea.form-input {
 
 @media (max-width: 768px) {
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 2rem;
   }
   
@@ -297,6 +278,21 @@ textarea.form-input {
   
   .form-input {
     padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-grid {
+    gap: 1.5rem;
+  }
+  
+  .consultation-item {
+    padding: 1rem;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    font-size: 0.95rem;
   }
 }
 </style>
@@ -339,6 +335,9 @@ textarea.form-input {
           });
       });
     </script>
+
+    <!-- Premium Animation System -->
+    <script src="/assets/js/animations.js"></script>
 
   </body>
 

@@ -26,8 +26,8 @@ permalink: /services
       
       <div class="services-grid">
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-lightning"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-lightning"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Premium Website Development</h3>
           <p class="text-muted mb-3">Custom-coded websites that load in under 3 seconds, rank higher in search, and convert visitors into high-value clients.</p>
@@ -44,8 +44,8 @@ permalink: /services
         </div>
         
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-store"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-store"></use></svg>
           </div>
           <h3 class="text-gold mb-2">E-Commerce Excellence</h3>
           <p class="text-muted mb-3">Sophisticated online stores that handle complex inventories, integrate with your systems, and maximize average order value.</p>
@@ -62,8 +62,8 @@ permalink: /services
         </div>
         
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-tools"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-tools"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Custom Web Applications</h3>
           <p class="text-muted mb-3">Bespoke digital solutions that automate your business processes and give you a competitive advantage in your market.</p>
@@ -90,8 +90,8 @@ permalink: /services
       
       <div class="services-grid">
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-target"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-target"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Digital Strategy Consulting</h3>
           <p class="text-muted mb-3">Executive-level consulting to optimize your digital presence, positioning, and conversion strategy for maximum ROI.</p>
@@ -108,8 +108,8 @@ permalink: /services
         </div>
         
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-content"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-content"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Premium Content & Copywriting</h3>
           <p class="text-muted mb-3">Psychology-driven content that positions your business as the premium choice and converts visitors into high-value clients.</p>
@@ -126,8 +126,8 @@ permalink: /services
         </div>
         
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-design"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-design"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Executive Brand Design</h3>
           <p class="text-muted mb-3">Sophisticated visual identity that commands attention, builds trust, and positions your business as the premium choice.</p>
@@ -154,8 +154,8 @@ permalink: /services
       
       <div class="services-grid">
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-analytics"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-analytics"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Performance Optimization</h3>
           <p class="text-muted mb-3">Continuous monitoring and optimization to ensure your website maintains peak performance and maximum conversion rates.</p>
@@ -172,8 +172,8 @@ permalink: /services
         </div>
         
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-security"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-security"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Premium Maintenance</h3>
           <p class="text-muted mb-3">Enterprise-level maintenance and security monitoring that keeps your website running flawlessly 24/7.</p>
@@ -190,8 +190,8 @@ permalink: /services
         </div>
         
         <div class="service-card glass-card">
-          <div class="service-icon">
-            <svg class="icon"><use href="#icon-rocket"></use></svg>
+          <div class="service-icon service-icon-enhanced">
+            <svg class="icon icon-animated"><use href="#icon-rocket"></use></svg>
           </div>
           <h3 class="text-gold mb-2">Growth Acceleration</h3>
           <p class="text-muted mb-3">Strategic initiatives designed to scale your digital presence and accelerate business growth through intelligent optimization.</p>
@@ -215,7 +215,10 @@ permalink: /services
         <h3 class="text-gold mb-3">Ready to Transform Your Digital Presence?</h3>
         <p class="text-muted mb-4" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Schedule a strategic consultation to discover exactly how our premium solutions can drive measurable growth for your business.</p>
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="/contact" class="btn btn-primary">Schedule Consultation</a>
+          <a href="/contact" class="btn btn-primary btn-icon-slide">
+            Schedule Consultation 
+            <svg class="icon icon-sm" style="margin-left: 0.5rem;"><use href="#icon-arrow-right"></use></svg>
+          </a>
           <a href="/portfolio" class="btn btn-outline">View Success Stories</a>
         </div>
         <p class="text-subtle mt-3" style="font-size: 0.95rem;"><em>Premium consultation. Strategic insights. Measurable ROI.</em></p>

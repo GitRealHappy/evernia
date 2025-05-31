@@ -26,19 +26,25 @@ permalink: /careers/
       
       <div class="culture-grid">
         <div class="culture-card glass-card">
-          <div class="culture-icon">🎯</div>
+          <div class="culture-icon">
+            <svg class="icon icon-xl"><use href="#icon-target"></use></svg>
+          </div>
           <h3 class="text-gold mb-2">Strategic Excellence</h3>
           <p class="text-muted">We approach every project with strategic intelligence, delivering solutions that drive measurable business growth and competitive advantage.</p>
         </div>
         
         <div class="culture-card glass-card">
-          <div class="culture-icon">🚀</div>
+          <div class="culture-icon">
+            <svg class="icon icon-xl"><use href="#icon-rocket"></use></svg>
+          </div>
           <h3 class="text-gold mb-2">Innovation Leadership</h3>
           <p class="text-muted">Our team stays ahead of industry trends, leveraging cutting-edge technologies to deliver premium solutions that exceed expectations.</p>
         </div>
         
         <div class="culture-card glass-card">
-          <div class="culture-icon">💎</div>
+          <div class="culture-icon">
+            <svg class="icon icon-xl"><use href="#icon-design"></use></svg>
+          </div>
           <h3 class="text-gold mb-2">Premium Standards</h3>
           <p class="text-muted">We maintain the highest standards in everything we do, from code quality to client communication to project delivery.</p>
         </div>
@@ -96,7 +102,9 @@ permalink: /careers/
       </div>
       
       <div class="opening-notice glass-card text-center">
-        <div class="notice-icon">⚡</div>
+        <div class="notice-icon">
+          <svg class="icon icon-xl"><use href="#icon-lightning"></use></svg>
+        </div>
         <h3 class="text-gold mb-3">Building Our Elite Team</h3>
         <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.7;">We're selectively building our team with top-tier talent who share our vision for premium digital excellence. While we don't have active job postings, we're always interested in connecting with exceptional professionals.</p>
         
@@ -191,9 +199,16 @@ permalink: /careers/
 }
 
 .culture-icon {
-  font-size: 3rem;
   margin-bottom: 1.5rem;
   color: var(--electric-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.culture-icon .icon {
+  width: 48px;
+  height: 48px;
 }
 
 .benefits-list {
@@ -225,9 +240,16 @@ permalink: /careers/
 }
 
 .notice-icon {
-  font-size: 4rem;
-  color: var(--champagne-gold);
   margin-bottom: 1.5rem;
+  color: var(--champagne-gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice-icon .icon {
+  width: 64px;
+  height: 64px;
 }
 
 .ideal-candidates {

@@ -1,0 +1,103 @@
+/* Evernia Design - Simple Icon Animation System */
+/* Safe hover effects and icon animations only */
+
+/* ===== ICON ANIMATION SYSTEM ===== */
+
+/* Base Animation Framework */
+.icon-animated {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Simple Hover Effects */
+.icon-hover-lift:hover {
+  transform: translateY(-2px) scale(1.05);
+  filter: drop-shadow(0 5px 10px rgba(212, 175, 55, 0.3));
+}
+
+.icon-hover-pulse:hover {
+  animation: simple-pulse 1s ease-in-out infinite;
+}
+
+.icon-hover-glow:hover {
+  filter: drop-shadow(0 0 10px currentColor);
+  transform: scale(1.05);
+}
+
+/* Service Icon Enhanced Effects */
+.service-icon-enhanced {
+  position: relative;
+  overflow: visible;
+}
+
+.service-icon-enhanced .icon {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon-enhanced .icon {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 3px 10px rgba(255, 255, 255, 0.3));
+}
+
+/* Button Icon Animations */
+.btn-icon-slide .icon {
+  transition: transform 0.3s ease;
+}
+
+.btn-icon-slide:hover .icon {
+  transform: translateX(5px);
+}
+
+/* Simple Keyframes */
+@keyframes simple-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* Magnetic Effect for Buttons */
+.magnetic-effect {
+  transition: transform 0.2s ease;
+}
+
+.magnetic-effect:hover {
+  transform: scale(1.02);
+}
+
+/* Simple Ripple Effect */
+.ripple-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Loading States */
+.icon-loading {
+  animation: simple-spin 1s linear infinite;
+}
+
+@keyframes simple-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Controls */
+@media (max-width: 768px) {
+  .magnetic-effect:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+} 

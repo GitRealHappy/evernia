@@ -11,7 +11,7 @@ description: "Transform your digital presence with intelligent, ROI-focused web 
   <div class="hero-content">
     <h1 class="font-display">Premium Web Solutions for <span class="text-gold">Ambitious Businesses</span></h1>
     <p class="subtitle">Where Intelligence Meets Investment Returns. Transform your digital presence with sophisticated web solutions that command premium pricing and drive measurable ROI.</p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+    <div class="hero-buttons">
       <a href="/contact" class="btn btn-primary">Schedule Executive Consultation</a>
       <a href="/portfolio" class="btn btn-outline">View Success Stories</a>
     </div>
@@ -130,5 +130,59 @@ description: "Transform your digital presence with intelligent, ROI-focused web 
     <p class="text-subtle mt-3" style="font-size: 0.95rem;"><em>Premium consultation. Strategic insights. Measurable results.</em></p>
   </div>
 </section>
+
+<style>
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.hero-buttons .btn {
+  font-size: 1rem;
+  padding: 0.9rem 1.8rem;
+  white-space: nowrap;
+  min-width: auto;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    padding: 0 1.5rem;
+  }
+  
+  .hero-buttons {
+    padding: 0 1.5rem;
+    gap: 0.75rem;
+  }
+  
+  .hero-buttons .btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.5rem;
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    padding: 0 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+</style>
 
 ---
