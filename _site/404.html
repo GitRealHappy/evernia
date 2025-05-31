@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evernia Design</title>
+  <title>Page Not Found</title>
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="icon" type="image/png" href="/assets/images/logosmall.png">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Evernia Design" />
-  <meta property="og:description" content="Custom web design and development focused on speed, aesthetics, and results." />
-  <meta property="og:url" content="http://localhost:4000/404.html" />
+  <meta property="og:title" content="Page Not Found" />
+  <meta property="og:description" content="The requested page could not be found. Return to Evernia Design&#39;s premium digital solutions." />
+  <meta property="og:url" content="http://0.0.0.0:4000/404.html" />
   <meta property="og:site_name" content="Evernia Design" />
-  <meta property="og:image" content="http://localhost:4000/assets/images/socialbanner.png" />
-  <meta property="og:image:alt" content="Evernia Design social preview" />
+  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta property="og:image:alt" content="Page Not Found social preview" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Evernia Design" />
-  <meta name="twitter:description" content="Custom web design and development focused on speed, aesthetics, and results." />
-  <meta name="twitter:image" content="http://localhost:4000/assets/images/socialbanner.png" />
-  <meta name="twitter:image:alt" content="Evernia Design social preview" />
+  <meta name="twitter:title" content="Page Not Found" />
+  <meta name="twitter:description" content="The requested page could not be found. Return to Evernia Design&#39;s premium digital solutions." />
+  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta name="twitter:image:alt" content="Page Not Found social preview" />
   
   <meta name="twitter:site" content="@UnblockedCarver" />
   
-</head>
-<body>
-  <header class="site-header">
+</head> <body>
+
+    <!-- Custom Icon System -->
+    <div style="display: none;">
+      
+      <object data="/assets/images/icons.svg" type="image/svg+xml"></object>
+    </div><header class="site-header">
   <nav class="navbar">
     <a href="/" class="nav-logo" style="display: flex; align-items: center;">
       <img src="/assets/images/logosmall.png" alt="Evernia Design Logo" style="margin-right: 10px; height: 30px;">
@@ -46,63 +49,141 @@
       <li><a href="/careers">Careers</a></li>
     </ul>
   </nav>
-</header> 
+</header> <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <section style="padding: 6rem 0; min-height: 60vh; display: flex; align-items: center;">
   <div class="container">
-    <article class="post">
+    <div class="error-content text-center">
+      <div class="error-code">404</div>
+      <h1 class="font-display text-primary">Page Not <span class="text-gold">Found</span></h1>
+      <p class="text-muted" style="font-size: 1.2rem; max-width: 500px; margin: 0 auto 3rem;">The page you're looking for seems to have taken a different path. Let's get you back to where you need to be.</p>
+      
+      <div class="error-actions">
+        <a href="/" class="btn btn-primary">Return Home</a>
+        <a href="/contact" class="btn btn-outline">Get Help</a>
+      </div>
+      
+      <div class="helpful-links mt-4">
+        <p class="text-muted mb-2">Looking for something specific?</p>
+        <div class="quick-links">
+          <a href="/services" class="quick-link">Services</a>
+          <a href="/portfolio" class="quick-link">Portfolio</a>
+          <a href="/blog" class="quick-link">Insights</a>
+          <a href="/team" class="quick-link">Team</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-  </header>
+<style>
+.error-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-  <div class="post-content">
-    <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+.error-code {
+  font-size: clamp(6rem, 15vw, 12rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--champagne-gold), var(--electric-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.helpful-links {
+  padding-top: 2rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.quick-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quick-link {
+  color: var(--electric-blue);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.quick-link:hover {
+  color: var(--champagne-gold);
+  border-color: var(--champagne-gold);
+  background: rgba(212, 175, 55, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  
+  .quick-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
+}
 </style>
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-
+      </div>
+    </main><footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p>&copy; 2025 Evernia Design. All rights reserved.</p>
+        <p class="footer-tagline">Premium digital solutions for ambitious businesses.</p>
+      </div>
+      <ul class="footer-social">
+        <li><a href="https://x.com/UnblockedCarver" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/jessejamesboyes/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/GitRealHappy" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
   </div>
+</footer> <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
 
-</article>
+        if (navToggle && navLinks) {
+          navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+          });
+        }
 
-  </div>
-  <footer class="site-footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Evernia Design. All rights reserved.</p>
-    <ul class="footer-social">
-      <li><a href="https://x.com/UnblockedCarver">Twitter</a></li>
-      <li><a href="https://www.linkedin.com/in/jessejamesboyes/">LinkedIn</a></li>
-      <li><a href="https://github.com/GitRealHappy">GitHub</a></li>
-    </ul>
-  </div>
-</footer> 
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
+        // Load SVG sprite for icons
+        fetch('/assets/images/icons.svg')
+          .then(response => response.text())
+          .then(data => {
+            const div = document.createElement('div');
+            div.style.display = 'none';
+            div.innerHTML = data;
+            document.body.insertBefore(div, document.body.firstChild);
+          });
       });
-    }
-  });
-</script>
-</body>
+    </script>
+
+  </body>
+
 </html> 

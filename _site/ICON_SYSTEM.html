@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Icon System Documentation</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/png" href="/assets/images/logosmall.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Custom Icon System Documentation" />
+  <meta property="og:description" content="Custom web design and development focused on speed, aesthetics, and results." />
+  <meta property="og:url" content="http://0.0.0.0:4000/ICON_SYSTEM.html" />
+  <meta property="og:site_name" content="Evernia Design" />
+  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta property="og:image:alt" content="Custom Icon System Documentation social preview" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Custom Icon System Documentation" />
+  <meta name="twitter:description" content="Custom web design and development focused on speed, aesthetics, and results." />
+  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta name="twitter:image:alt" content="Custom Icon System Documentation social preview" />
+  
+  <meta name="twitter:site" content="@UnblockedCarver" />
+  
+</head> <body>
+
+    <!-- Custom Icon System -->
+    <div style="display: none;">
+      
+      <object data="/assets/images/icons.svg" type="image/svg+xml"></object>
+    </div><header class="site-header">
+  <nav class="navbar">
+    <a href="/" class="nav-logo" style="display: flex; align-items: center;">
+      <img src="/assets/images/logosmall.png" alt="Evernia Design Logo" style="margin-right: 10px; height: 30px;">
+      Evernia Design
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/careers">Careers</a></li>
+    </ul>
+  </nav>
+</header> <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Custom Icon System Documentation</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="custom-icon-system-documentation">Custom Icon System Documentation</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Evernia Design now features a custom SVG icon system that replaces emoji usage throughout the site. This system provides:</p>
+<ul>
+  <li><strong>Professional Appearance</strong>: Custom-designed SVG icons that match the premium brand aesthetic</li>
+  <li><strong>Performance</strong>: Optimized vector graphics that scale perfectly at any size</li>
+  <li><strong>Consistency</strong>: Uniform styling and behavior across all icons</li>
+  <li><strong>Accessibility</strong>: Better screen reader support and semantic meaning</li>
+</ul>
+
+<h2 id="icon-sprite-location">Icon Sprite Location</h2>
+<ul>
+  <li><strong>File</strong>: <code class="language-plaintext highlighter-rouge">/assets/images/icons.svg</code></li>
+  <li><strong>Format</strong>: SVG symbol sprite</li>
+  <li><strong>Loading</strong>: Automatically loaded in <code class="language-plaintext highlighter-rouge">_layouts/default.html</code></li>
+</ul>
+
+<h2 id="available-icons">Available Icons</h2>
+
+<h3 id="core-service-icons">Core Service Icons</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">icon-lightning</code> - Performance/Speed (⚡ replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-store</code> - E-commerce/Shopping (🏪 replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-tools</code> - Development/Tools (🔧 replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-target</code> - Strategy/Goals (🎯 replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-content</code> - Content/Writing (📝 replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-design</code> - Design/Creative (🎨 replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-analytics</code> - Analytics/Growth (📈 replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-security</code> - Security/Protection (🛡️ replacement)</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-rocket</code> - Launch/Growth (🚀 replacement)</li>
+</ul>
+
+<h3 id="ui-support-icons">UI Support Icons</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">icon-phone</code> - Contact/Phone</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-email</code> - Email/Contact</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-clock</code> - Time/Schedule</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-user</code> - User/Person</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-check</code> - Success/Confirmation</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-arrow-right</code> - Navigation/Next</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-brain</code> - Intelligence/AI</li>
+  <li><code class="language-plaintext highlighter-rouge">icon-globe</code> - Global/Web</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+</code></pre></div></div>
+
+<h3 id="with-size-classes">With Size Classes</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>  <span class="c">&lt;!-- 16px --&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-md"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>  <span class="c">&lt;!-- 24px --&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-lg"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>  <span class="c">&lt;!-- 32px --&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-xl"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>  <span class="c">&lt;!-- 48px --&gt;</span>
+</code></pre></div></div>
+
+<h3 id="with-animations">With Animations</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-rotate"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>  <span class="c">&lt;!-- Spinning --&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-pulse"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>   <span class="c">&lt;!-- Pulsing --&gt;</span>
+</code></pre></div></div>
+
+<h3 id="in-service-cards">In Service Cards</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"service-icon"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"#icon-lightning"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="styling-system">Styling System</h2>
+
+<h3 id="size-classes">Size Classes</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">.icon-sm</code> - 16x16px (small UI elements)</li>
+  <li><code class="language-plaintext highlighter-rouge">.icon-md</code> - 24x24px (standard inline icons)</li>
+  <li><code class="language-plaintext highlighter-rouge">.icon-lg</code> - 32x32px (feature highlights)</li>
+  <li><code class="language-plaintext highlighter-rouge">.icon-xl</code> - 48x48px (hero sections)</li>
+</ul>
+
+<h3 id="animation-classes">Animation Classes</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">.icon-rotate</code> - Continuous rotation</li>
+  <li><code class="language-plaintext highlighter-rouge">.icon-pulse</code> - Opacity pulsing effect</li>
+</ul>
+
+<h3 id="color-control">Color Control</h3>
+<p>Icons inherit the <code class="language-plaintext highlighter-rouge">currentColor</code> CSS property, making them responsive to text color changes:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.text-gold</span> <span class="nc">.icon</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--champagne-gold</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.text-blue</span> <span class="nc">.icon</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--electric-blue</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.text-purple</span> <span class="nc">.icon</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--royal-purple</span><span class="p">);</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="service-icon-styling">Service Icon Styling</h2>
+<p>The <code class="language-plaintext highlighter-rouge">.service-icon</code> class provides special styling for service cards:</p>
+
+<ul>
+  <li><strong>Background</strong>: Gold to blue gradient</li>
+  <li><strong>Hover Effect</strong>: Transforms to blue/purple gradient</li>
+  <li><strong>Animation</strong>: Scale and color transition on hover</li>
+  <li><strong>Size</strong>: Fixed 80px circle with 40px icon</li>
+</ul>
+
+<h2 id="adding-new-icons">Adding New Icons</h2>
+
+<h3 id="1-design-guidelines">1. Design Guidelines</h3>
+<ul>
+  <li><strong>ViewBox</strong>: Use <code class="language-plaintext highlighter-rouge">0 0 24 24</code> for consistency</li>
+  <li><strong>Style</strong>: Line weight 2px, filled shapes where appropriate</li>
+  <li><strong>Colors</strong>: Use <code class="language-plaintext highlighter-rouge">currentColor</code> and <code class="language-plaintext highlighter-rouge">white</code> with opacity for highlights</li>
+  <li><strong>Simplicity</strong>: Keep designs clean and recognizable at small sizes</li>
+</ul>
+
+<h3 id="2-svg-structure">2. SVG Structure</h3>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;symbol</span> <span class="na">id=</span><span class="s">"icon-name"</span> <span class="na">viewBox=</span><span class="s">"0 0 24 24"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"..."</span> <span class="na">fill=</span><span class="s">"currentColor"</span><span class="nt">/&gt;</span>
+  <span class="c">&lt;!-- Optional highlight elements --&gt;</span>
+  <span class="nt">&lt;circle</span> <span class="na">cx=</span><span class="s">"..."</span> <span class="na">cy=</span><span class="s">"..."</span> <span class="na">r=</span><span class="s">"..."</span> <span class="na">fill=</span><span class="s">"white"</span> <span class="na">opacity=</span><span class="s">"0.9"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/symbol&gt;</span>
+</code></pre></div></div>
+
+<h3 id="3-integration-steps">3. Integration Steps</h3>
+<ol>
+  <li>Add new <code class="language-plaintext highlighter-rouge">&lt;symbol&gt;</code> to <code class="language-plaintext highlighter-rouge">/assets/images/icons.svg</code></li>
+  <li>Follow naming convention: <code class="language-plaintext highlighter-rouge">icon-descriptive-name</code></li>
+  <li>Test at multiple sizes</li>
+  <li>Update this documentation</li>
+</ol>
+
+<h2 id="performance-notes">Performance Notes</h2>
+<ul>
+  <li><strong>Sprite Loading</strong>: Icons are loaded once per page via JavaScript fetch</li>
+  <li><strong>Caching</strong>: SVG sprite is cached by the browser</li>
+  <li><strong>Size</strong>: Current sprite ~3KB gzipped</li>
+  <li><strong>Rendering</strong>: Hardware-accelerated SVG rendering</li>
+</ul>
+
+<h2 id="browser-support">Browser Support</h2>
+<ul>
+  <li><strong>Modern Browsers</strong>: Full support (Chrome 55+, Firefox 55+, Safari 12+)</li>
+  <li><strong>Legacy Support</strong>: Graceful degradation (IE11 with polyfill if needed)</li>
+  <li><strong>Mobile</strong>: Full support on iOS Safari and Chrome Mobile</li>
+</ul>
+
+<h2 id="migration-notes">Migration Notes</h2>
+<p>The following emoji replacements have been completed:</p>
+<ul>
+  <li>⚡ → <code class="language-plaintext highlighter-rouge">icon-lightning</code></li>
+  <li>🏪 → <code class="language-plaintext highlighter-rouge">icon-store</code></li>
+  <li>🔧 → <code class="language-plaintext highlighter-rouge">icon-tools</code></li>
+  <li>🎯 → <code class="language-plaintext highlighter-rouge">icon-target</code></li>
+  <li>📝 → <code class="language-plaintext highlighter-rouge">icon-content</code></li>
+  <li>🎨 → <code class="language-plaintext highlighter-rouge">icon-design</code></li>
+  <li>📈 → <code class="language-plaintext highlighter-rouge">icon-analytics</code></li>
+  <li>🛡️ → <code class="language-plaintext highlighter-rouge">icon-security</code></li>
+  <li>🚀 → <code class="language-plaintext highlighter-rouge">icon-rocket</code></li>
+</ul>
+
+<h2 id="future-enhancements">Future Enhancements</h2>
+<ol>
+  <li><strong>Icon Variants</strong>: Outlined and filled versions</li>
+  <li><strong>Theme Adaptation</strong>: Automatic dark/light mode variants</li>
+  <li><strong>Animation Library</strong>: More sophisticated animations</li>
+  <li><strong>Icon Font</strong>: Optional webfont version for simpler implementation</li>
+  <li><strong>Build Process</strong>: Automated optimization and sprite generation</li>
+</ol>
+
+<hr />
+
+<p><em>Last Updated: January 2025</em>
+<em>Next Review: February 2025</em></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p>&copy; 2025 Evernia Design. All rights reserved.</p>
+        <p class="footer-tagline">Premium digital solutions for ambitious businesses.</p>
+      </div>
+      <ul class="footer-social">
+        <li><a href="https://x.com/UnblockedCarver" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/jessejamesboyes/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/GitRealHappy" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</footer> <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (navToggle && navLinks) {
+          navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+          });
+        }
+
+        // Load SVG sprite for icons
+        fetch('/assets/images/icons.svg')
+          .then(response => response.text())
+          .then(data => {
+            const div = document.createElement('div');
+            div.style.display = 'none';
+            div.innerHTML = data;
+            document.body.insertBefore(div, document.body.firstChild);
+          });
+      });
+    </script>
+
+  </body>
+
+</html> 

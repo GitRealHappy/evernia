@@ -1,134 +1,227 @@
 ---
-title: Portfolio
+title: "Success Stories & Case Studies"
+description: "Explore our portfolio of premium web solutions that drive measurable results for ambitious businesses across Canada."
 layout: default
 ---
 
-# Portfolio
-
-Here are some of our recent projects. More examples of our work will be added soon.
-
-<div class="portfolio-grid">
-{% for project in site.data.portfolio %}
-  <div class="portfolio-item">
-    <div class="portfolio-image">
-      <img src="{{ '/assets/images/portfolio/' | append: project.image | relative_url }}" alt="{{ project.title }}" />
-    </div>
-    <div class="portfolio-content">
-      <h3>{{ project.title }}</h3>
-      {% if project.type %}
-        <p class="portfolio-type">{{ project.type }}</p>
-      {% endif %}
-      <p class="portfolio-description">{{ project.description }}</p>
-      {% if project.technologies %}
-        <p class="portfolio-tech"><strong>Technologies:</strong> {{ project.technologies }}</p>
-      {% endif %}
-      {% if project.link and project.link != "#" %}
-        <a href="{{ project.link }}" class="portfolio-link" target="_blank">View Project</a>
-      {% endif %}
+<section style="padding: 4rem 0; background: var(--rich-charcoal);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h1 class="font-display">Success Stories & <span class="text-gold">Case Studies</span></h1>
+      <p class="text-muted" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Discover how our intelligent web solutions transform businesses, drive premium positioning, and deliver measurable ROI for ambitious entrepreneurs.</p>
     </div>
   </div>
-{% endfor %}
-</div>
+</section>
 
-<div class="portfolio-note">
-  <p><em>More projects coming soon! We're continuously adding new examples of our work.</em></p>
-</div>
+<section style="padding: 4rem 0;">
+  <div class="container">
+    <div class="portfolio-grid">
+      {% for project in site.data.portfolio %}
+        <div class="portfolio-card glass-card">
+          <div class="portfolio-image">
+            <img src="{{ '/assets/images/portfolio/' | append: project.image | relative_url }}" alt="{{ project.title }}" />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                {% if project.link and project.link != "#" %}
+                  <a href="{{ project.link }}" class="btn btn-primary" target="_blank">View Live Site</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-content">
+            <h3 class="text-primary mb-2">{{ project.title }}</h3>
+            
+            {% if project.type %}
+              <div class="portfolio-badge">
+                <span class="badge">{{ project.type }}</span>
+              </div>
+            {% endif %}
+            
+            <p class="text-muted portfolio-description">{{ project.description }}</p>
+            
+            {% if project.technologies %}
+              <div class="tech-stack mb-3">
+                <span class="tech-label">Technologies:</span>
+                <div class="tech-tags">
+                  {% assign techs = project.technologies | split: ', ' %}
+                  {% for tech in techs %}
+                    <span class="tech-tag">{{ tech }}</span>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+            
+            <div class="portfolio-actions">
+              {% if project.link and project.link != "#" %}
+                <a href="{{ project.link }}" class="portfolio-link" target="_blank">
+                  <span>Visit Site</span>
+                  <span>→</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <div class="portfolio-cta">
+      <div class="glass-card text-center">
+        <h3 class="text-gold mb-3">Ready to Join Our Success Stories?</h3>
+        <p class="text-muted mb-4">Transform your business with a premium web presence that commands attention and drives results.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/contact" class="btn btn-primary">Start Your Project</a>
+          <a href="/services" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <style>
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  max-width: 1200px;
-  gap: 1.5rem;
-  margin: 2rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
-@media (min-width: 900px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.portfolio-item {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.portfolio-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  max-width: 380px;
-  margin: 0 auto;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-.portfolio-item:hover {
-  transform: translateY(-5px);
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-large);
+  border-color: var(--champagne-gold);
+}
+
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
 }
 
 .portfolio-image img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
-  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-card:hover .portfolio-image img {
+  transform: scale(1.05);
+}
+
+.overlay-content {
+  text-align: center;
 }
 
 .portfolio-content {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
-.portfolio-content h3 {
-  margin: 0 0 0.5rem 0;
-  color: #333;
-  font-size: 1.25rem;
+.portfolio-badge {
+  margin-bottom: 1rem;
 }
 
-.portfolio-type {
-  color: #666;
-  font-size: 0.9rem;
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--champagne-gold), var(--electric-blue));
+  color: var(--deep-black);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
   font-weight: 600;
-  margin: 0 0 1rem 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .portfolio-description {
-  color: #666;
-  line-height: 1.6;
-  margin: 0 0 1rem 0;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
-.portfolio-tech {
-  color: #555;
+.tech-stack {
+  border-top: 1px solid var(--glass-border);
+  padding-top: 1rem;
+}
+
+.tech-label {
+  color: var(--text-muted);
   font-size: 0.9rem;
-  margin: 0 0 1.5rem 0;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: var(--elevated-dark);
+  color: var(--electric-blue);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.portfolio-actions {
+  margin-top: 1.5rem;
 }
 
 .portfolio-link {
-  display: inline-block;
-  background-color: #007acc;
-  color: white;
-  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--champagne-gold);
   text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--champagne-gold);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: transparent;
+  width: 100%;
 }
 
 .portfolio-link:hover {
-  background-color: #005a9e;
+  background: var(--champagne-gold);
+  color: var(--deep-black);
+  box-shadow: var(--glow-gold);
+  transform: translateX(5px);
 }
 
-.portfolio-note {
-  text-align: center;
-  margin: 3rem 0 2rem 0;
-  padding: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-}
-
-.portfolio-note p {
-  margin: 0;
-  color: #666;
-  font-style: italic;
+.portfolio-cta {
+  margin-top: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -137,8 +230,13 @@ Here are some of our recent projects. More examples of our work will be added so
     gap: 1.5rem;
   }
   
+  .portfolio-card {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
   .portfolio-content {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 </style> 

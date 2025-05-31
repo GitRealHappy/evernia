@@ -1,31 +1,360 @@
 ---
-layout: page
-title: Build Your First Website With Us
+layout: default
+title: "Premium Digital Launch"
+description: "Strategic consultation for ambitious businesses ready to launch with premium digital presence. Executive-level planning from day one."
 permalink: /new-website-inquiry/
 ---
 
-<div class="container page-content">
-  <h1>Ready to Launch Your Online Presence?</h1>
-  <p>Starting from scratch can be exciting! If you don't have a website yet, you're in the right place. We specialize in helping service professionals and entrepreneurs build a powerful first website that establishes credibility and attracts clients. Tell us about your vision, and let's build something amazing together.</p>
-
-  <div class="form-container">
-    <form action="https://formspree.io/f/xjkwjdqp" method="POST">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="business_type">Business Type/Plan:</label>
-      <input type="text" id="business_type" name="business_type" placeholder="e.g., Massage Therapist, New Coaching Business">
-
-      <label for="features_goals">Desired Features/Goals:</label>
-      <textarea id="features_goals" name="features_goals" rows="6" placeholder="e.g., Online booking, showcase services, blog, generate leads..."></textarea>
-
-      <label for="additional_info">Additional Information:</label>
-      <textarea id="additional_info" name="additional_info" rows="4" placeholder="Anything else you'd like to share?"></textarea>
-
-      <button type="submit" class="cta-button">Let's Talk</button>
-    </form>
+<section style="padding: 4rem 0; background: var(--rich-charcoal);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h1 class="font-display">Premium Digital <span class="text-gold">Launch</span></h1>
+      <p class="text-muted" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Strategic consultation for ambitious businesses ready to launch with premium digital presence. Position yourself as the premium choice from day one.</p>
+    </div>
   </div>
-</div> 
+</section>
+
+<section style="padding: 6rem 0;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;" class="launch-grid">
+      
+      <!-- Launch Strategy Details -->
+      <div class="launch-strategy">
+        <div class="glass-card mb-3">
+          <h2 class="text-blue mb-3">Strategic Launch Advantage</h2>
+          <p class="text-muted mb-4">Starting fresh gives us the unique opportunity to position your business as the premium choice in your market from day one. Our strategic approach ensures your digital presence commands attention and justifies premium pricing.</p>
+          
+          <div class="advantage-items">
+            <div class="advantage-item">
+              <div class="advantage-icon">🎯</div>
+              <div class="advantage-content">
+                <h3 class="text-gold">Premium Market Positioning</h3>
+                <p class="text-muted">Position yourself as the high-value option with sophisticated messaging and premium design.</p>
+              </div>
+            </div>
+            
+            <div class="advantage-item">
+              <div class="advantage-icon">⚡</div>
+              <div class="advantage-content">
+                <h3 class="text-gold">Performance-First Architecture</h3>
+                <p class="text-muted">Built for speed, conversions, and search engine dominance from launch day.</p>
+              </div>
+            </div>
+            
+            <div class="advantage-item">
+              <div class="advantage-icon">📈</div>
+              <div class="advantage-content">
+                <h3 class="text-gold">Conversion-Optimized Design</h3>
+                <p class="text-muted">Every element strategically designed to guide visitors toward becoming clients.</p>
+              </div>
+            </div>
+            
+            <div class="advantage-item">
+              <div class="advantage-icon">🚀</div>
+              <div class="advantage-content">
+                <h3 class="text-gold">Scalable Growth Foundation</h3>
+                <p class="text-muted">Built to grow with your business, supporting advanced features as you scale.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="glass-card">
+          <h3 class="text-purple mb-3">Launch Timeline</h3>
+          <div class="timeline-phases">
+            <div class="phase-item">
+              <div class="phase-duration">Week 1-2</div>
+              <div class="phase-content">
+                <h4 class="text-primary">Strategic Foundation</h4>
+                <p class="text-muted">Market research, competitive analysis, brand positioning, and messaging strategy.</p>
+              </div>
+            </div>
+            
+            <div class="phase-item">
+              <div class="phase-duration">Week 3-4</div>
+              <div class="phase-content">
+                <h4 class="text-primary">Premium Design</h4>
+                <p class="text-muted">Custom design system, user experience optimization, and conversion-focused layouts.</p>
+              </div>
+            </div>
+            
+            <div class="phase-item">
+              <div class="phase-duration">Week 5-6</div>
+              <div class="phase-content">
+                <h4 class="text-primary">Development & Integration</h4>
+                <p class="text-muted">High-performance development, CMS setup, and business system integrations.</p>
+              </div>
+            </div>
+            
+            <div class="phase-item">
+              <div class="phase-duration">Week 7-8</div>
+              <div class="phase-content">
+                <h4 class="text-primary">Launch & Optimization</h4>
+                <p class="text-muted">Testing, training, launch strategy, and initial performance optimization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Launch Consultation Form -->
+      <div class="launch-form-section">
+        <div class="glass-card">
+          <h2 class="text-gold mb-3">Strategic Launch Consultation</h2>
+          <p class="text-muted mb-4">Tell us about your vision and business goals. We'll create a strategic launch plan that positions you as the premium choice in your market.</p>
+          
+          <form class="launch-form" action="https://formspree.io/f/xjkwjdqp" method="POST">
+            <div class="form-group">
+              <label for="founder-name" class="form-label">Your Name *</label>
+              <input type="text" id="founder-name" name="founder-name" required class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" required class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="business-name" class="form-label">Business/Brand Name *</label>
+              <input type="text" id="business-name" name="business-name" required class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="business-type" class="form-label">Business Type/Industry *</label>
+              <select id="business-type" name="business-type" required class="form-input">
+                <option value="">Select Your Industry</option>
+                <option value="Professional Services">Professional Services</option>
+                <option value="Consulting">Consulting</option>
+                <option value="Healthcare/Wellness">Healthcare/Wellness</option>
+                <option value="Coaching">Coaching</option>
+                <option value="Creative Services">Creative Services</option>
+                <option value="Technology">Technology</option>
+                <option value="E-commerce">E-commerce</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Finance">Finance</option>
+                <option value="Legal">Legal</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="target-market" class="form-label">Target Market/Clientele *</label>
+              <textarea id="target-market" name="target-market" rows="3" required class="form-input" placeholder="Who is your ideal client? What's their profile, needs, and budget range?"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="services-offerings" class="form-label">Services/Offerings *</label>
+              <textarea id="services-offerings" name="services-offerings" rows="3" required class="form-input" placeholder="What services will you offer? What makes you different from competitors?"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="pricing-strategy" class="form-label">Pricing Strategy</label>
+              <select id="pricing-strategy" name="pricing-strategy" class="form-input">
+                <option value="">Select Pricing Position</option>
+                <option value="Premium/High-end">Premium/High-end</option>
+                <option value="Mid-range">Mid-range</option>
+                <option value="Competitive">Competitive</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="website-goals" class="form-label">Website Goals & Features *</label>
+              <textarea id="website-goals" name="website-goals" rows="4" required class="form-input" placeholder="What do you want your website to accomplish? What features do you need? (e.g., online booking, e-commerce, lead generation, portfolio showcase)"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="launch-timeline" class="form-label">Desired Launch Timeline *</label>
+              <select id="launch-timeline" name="launch-timeline" required class="form-input">
+                <option value="">Select Timeline</option>
+                <option value="ASAP">As soon as possible</option>
+                <option value="1-2 months">1-2 months</option>
+                <option value="2-3 months">2-3 months</option>
+                <option value="3+ months">3+ months</option>
+                <option value="Flexible">Flexible</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="investment-budget" class="form-label">Investment Budget</label>
+              <select id="investment-budget" name="investment-budget" class="form-input">
+                <option value="">Select Budget Range</option>
+                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                <option value="$20,000 - $35,000">$20,000 - $35,000</option>
+                <option value="$35,000+">$35,000+</option>
+                <option value="Need guidance">Need guidance on investment</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="additional-info" class="form-label">Additional Information</label>
+              <textarea id="additional-info" name="additional-info" rows="3" class="form-input" placeholder="Any specific inspirations, concerns, or requirements we should know about?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem;">Schedule Strategic Consultation</button>
+            
+            <p class="form-disclaimer">
+              <small class="text-subtle">We'll contact you within 24 hours to schedule your strategic consultation and discuss your premium launch plan.</small>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.launch-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.advantage-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.advantage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--elevated-dark);
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.advantage-item:hover {
+  border-color: var(--champagne-gold);
+  transform: translateY(-2px);
+}
+
+.advantage-icon {
+  font-size: 2.5rem;
+  color: var(--electric-blue);
+  flex-shrink: 0;
+}
+
+.advantage-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.advantage-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.timeline-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.phase-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.phase-duration {
+  background: linear-gradient(135deg, var(--royal-purple), var(--electric-blue));
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-align: center;
+  min-width: 100px;
+}
+
+.phase-content h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.phase-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  background: var(--elevated-dark);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--champagne-gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-disclaimer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .launch-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .advantage-item, .phase-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .advantage-icon {
+    font-size: 2rem;
+  }
+  
+  .phase-duration {
+    margin: 0 auto;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+  }
+}
+</style> 

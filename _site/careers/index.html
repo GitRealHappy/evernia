@@ -1,11 +1,57 @@
----
-title: "Executive Opportunities"
-description: "Join Evernia Design's elite team. Executive-level opportunities for exceptional talent in premium digital solutions."
-layout: default
-permalink: /careers/
----
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Opportunities</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/png" href="/assets/images/logosmall.png">
 
-<section style="padding: 4rem 0; background: var(--rich-charcoal);">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Executive Opportunities" />
+  <meta property="og:description" content="Join Evernia Design&#39;s elite team. Executive-level opportunities for exceptional talent in premium digital solutions." />
+  <meta property="og:url" content="http://0.0.0.0:4000/careers/" />
+  <meta property="og:site_name" content="Evernia Design" />
+  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta property="og:image:alt" content="Executive Opportunities social preview" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Executive Opportunities" />
+  <meta name="twitter:description" content="Join Evernia Design&#39;s elite team. Executive-level opportunities for exceptional talent in premium digital solutions." />
+  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
+  <meta name="twitter:image:alt" content="Executive Opportunities social preview" />
+  
+  <meta name="twitter:site" content="@UnblockedCarver" />
+  
+</head> <body>
+
+    <!-- Custom Icon System -->
+    <div style="display: none;">
+      
+      <object data="/assets/images/icons.svg" type="image/svg+xml"></object>
+    </div><header class="site-header">
+  <nav class="navbar">
+    <a href="/" class="nav-logo" style="display: flex; align-items: center;">
+      <img src="/assets/images/logosmall.png" alt="Evernia Design Logo" style="margin-right: 10px; height: 30px;">
+      Evernia Design
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/careers">Careers</a></li>
+    </ul>
+  </nav>
+</header> <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <section style="padding: 4rem 0; background: var(--rich-charcoal);">
   <div class="container">
     <div class="text-center mb-4">
       <h1 class="font-display">Executive <span class="text-gold">Opportunities</span></h1>
@@ -54,7 +100,7 @@ permalink: /careers/
       
       <div class="benefits-grid">
         <div class="glass-card">
-          <h3 class="text-blue mb-3">Compensation & Growth</h3>
+          <h3 class="text-blue mb-3">Compensation &amp; Growth</h3>
           <ul class="benefits-list">
             <li>Competitive executive-level compensation</li>
             <li>Performance-based bonuses</li>
@@ -76,7 +122,7 @@ permalink: /careers/
         </div>
         
         <div class="glass-card">
-          <h3 class="text-blue mb-3">Innovation & Impact</h3>
+          <h3 class="text-blue mb-3">Innovation &amp; Impact</h3>
           <ul class="benefits-list">
             <li>Cutting-edge technology stack</li>
             <li>Autonomy in decision-making</li>
@@ -320,4 +366,47 @@ permalink: /careers/
     padding: 1rem;
   }
 }
-</style> 
+</style>
+
+
+      </div>
+    </main><footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p>&copy; 2025 Evernia Design. All rights reserved.</p>
+        <p class="footer-tagline">Premium digital solutions for ambitious businesses.</p>
+      </div>
+      <ul class="footer-social">
+        <li><a href="https://x.com/UnblockedCarver" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/jessejamesboyes/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/GitRealHappy" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</footer> <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (navToggle && navLinks) {
+          navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+          });
+        }
+
+        // Load SVG sprite for icons
+        fetch('/assets/images/icons.svg')
+          .then(response => response.text())
+          .then(data => {
+            const div = document.createElement('div');
+            div.style.display = 'none';
+            div.innerHTML = data;
+            document.body.insertBefore(div, document.body.firstChild);
+          });
+      });
+    </script>
+
+  </body>
+
+</html> 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evernia Design Website Structure</title>
@@ -10,9 +9,9 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Evernia Design Website Structure" />
   <meta property="og:description" content="Custom web design and development focused on speed, aesthetics, and results." />
-  <meta property="og:url" content="http://localhost:4000/STRUCTURE.html" />
+  <meta property="og:url" content="http://0.0.0.0:4000/STRUCTURE.html" />
   <meta property="og:site_name" content="Evernia Design" />
-  <meta property="og:image" content="http://localhost:4000/assets/images/socialbanner.png" />
+  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
   <meta property="og:image:alt" content="Evernia Design Website Structure social preview" />
   <meta property="og:type" content="website" />
 
@@ -20,14 +19,18 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Evernia Design Website Structure" />
   <meta name="twitter:description" content="Custom web design and development focused on speed, aesthetics, and results." />
-  <meta name="twitter:image" content="http://localhost:4000/assets/images/socialbanner.png" />
+  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/socialbanner.png" />
   <meta name="twitter:image:alt" content="Evernia Design Website Structure social preview" />
   
   <meta name="twitter:site" content="@UnblockedCarver" />
   
-</head>
-<body>
-  <header class="site-header">
+</head> <body>
+
+    <!-- Custom Icon System -->
+    <div style="display: none;">
+      
+      <object data="/assets/images/icons.svg" type="image/svg+xml"></object>
+    </div><header class="site-header">
   <nav class="navbar">
     <a href="/" class="nav-logo" style="display: flex; align-items: center;">
       <img src="/assets/images/logosmall.png" alt="Evernia Design Logo" style="margin-right: 10px; height: 30px;">
@@ -46,9 +49,9 @@
       <li><a href="/careers">Careers</a></li>
     </ul>
   </nav>
-</header> 
-  <div class="container">
-    <article class="post">
+</header> <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
 
   <header class="post-header">
     <h1 class="post-title">Evernia Design Website Structure</h1>
@@ -241,29 +244,44 @@
 
 </article>
 
+      </div>
+    </main><footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p>&copy; 2025 Evernia Design. All rights reserved.</p>
+        <p class="footer-tagline">Premium digital solutions for ambitious businesses.</p>
+      </div>
+      <ul class="footer-social">
+        <li><a href="https://x.com/UnblockedCarver" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/jessejamesboyes/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/GitRealHappy" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
   </div>
-  <footer class="site-footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Evernia Design. All rights reserved.</p>
-    <ul class="footer-social">
-      <li><a href="https://x.com/UnblockedCarver">Twitter</a></li>
-      <li><a href="https://www.linkedin.com/in/jessejamesboyes/">LinkedIn</a></li>
-      <li><a href="https://github.com/GitRealHappy">GitHub</a></li>
-    </ul>
-  </div>
-</footer> 
+</footer> <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
+        if (navToggle && navLinks) {
+          navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+          });
+        }
 
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
+        // Load SVG sprite for icons
+        fetch('/assets/images/icons.svg')
+          .then(response => response.text())
+          .then(data => {
+            const div = document.createElement('div');
+            div.style.display = 'none';
+            div.innerHTML = data;
+            document.body.insertBefore(div, document.body.firstChild);
+          });
       });
-    }
-  });
-</script>
-</body>
+    </script>
+
+  </body>
+
 </html> 

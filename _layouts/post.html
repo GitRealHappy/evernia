@@ -2,290 +2,360 @@
 layout: default
 ---
 
+<section style="padding: 4rem 0; background: var(--rich-charcoal);">
+  <div class="container">
+    <div class="text-center">
+      <nav class="post-breadcrumb">
+        <a href="/blog" class="breadcrumb-link">← Back to Insights</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
 <article class="blog-post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    
-    <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
-        {{ page.date | date: "%B %d, %Y" }}
-      </time>
+  <div class="container">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
       
-      {% if page.author %}
-        <span class="post-author">by {{ page.author }}</span>
-      {% endif %}
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+        
+        {% if page.author %}
+          <span class="post-author">by {{ page.author }}</span>
+        {% endif %}
+        
+        {% if page.categories %}
+          <div class="post-categories">
+            {% for category in page.categories %}
+              <span class="category-tag">{{ category | replace: '-', ' ' | capitalize }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
       
-      {% if page.categories %}
-        <div class="post-categories">
-          {% for category in page.categories %}
-            <span class="category-tag">{{ category | replace: '-', ' ' | capitalize }}</span>
-          {% endfor %}
+      {% if page.excerpt %}
+        <div class="post-excerpt">
+          {{ page.excerpt }}
         </div>
       {% endif %}
-    </div>
-    
-    {% if page.excerpt %}
-      <div class="post-excerpt">
-        {{ page.excerpt }}
-      </div>
-    {% endif %}
-  </header>
+    </header>
 
-  <div class="post-content">
-    {{ content }}
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+        {% if page.tags %}
+          <strong class="tags-label">Tags:</strong>
+          <div class="tag-list">
+            {% for tag in page.tags %}
+              <span class="tag">{{ tag | replace: '-', ' ' | capitalize }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      
+      <div class="post-cta">
+        <div class="cta-box glass-card">
+          <h3 class="text-gold">Ready to Transform Your Digital Presence?</h3>
+          <p class="text-muted">Discover how premium web solutions can drive measurable growth for your business.</p>
+          <div class="cta-actions">
+            <a href="/contact" class="btn btn-primary">Schedule Consultation</a>
+            <a href="/book-audit" class="btn btn-outline">Get Strategic Assessment</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-
-  <footer class="post-footer">
-    <div class="post-tags">
-      {% if page.tags %}
-        <strong>Tags:</strong>
-        {% for tag in page.tags %}
-          <span class="tag">{{ tag | replace: '-', ' ' | capitalize }}</span>
-        {% endfor %}
-      {% endif %}
-    </div>
-    
-    <div class="post-cta">
-      <div class="cta-box">
-        <h3>Ready to Transform Your Website?</h3>
-        <p>Get a free audit and discover how to fix your digital bottlenecks.</p>
-        <a href="/contact" class="cta-button">Get Your Free Audit</a>
-      </div>
-    </div>
-
-    <div class="post-navigation">
-      <a href="/blog" class="back-to-blog">← Back to Blog</a>
-    </div>
-  </footer>
 </article>
 
 <style>
+.post-breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.breadcrumb-link {
+  color: var(--electric-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--champagne-gold);
+}
+
 .blog-post {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  line-height: 1.7;
-  color: #333;
+  padding: 6rem 0;
+  background: var(--deep-black);
+}
+
+.blog-post .container {
+  max-width: 900px;
 }
 
 .post-header {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   text-align: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .post-title {
-  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 0 1.5rem 0;
-  color: #2c3e50;
+  margin: 0 0 2rem 0;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--text-primary), var(--champagne-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .post-meta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  color: #666;
-  font-size: 0.95rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .post-date {
+  color: var(--text-muted);
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .post-author {
-  font-style: italic;
+  color: var(--electric-blue);
+  font-weight: 500;
 }
 
 .post-categories {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .category-tag {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  background: linear-gradient(135deg, var(--royal-purple), var(--electric-blue));
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
 .post-excerpt {
-  font-size: 1.2rem;
-  color: #555;
-  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  margin-top: 2rem;
   font-style: italic;
-  border-left: 4px solid #007acc;
-  padding-left: 1.5rem;
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
+  line-height: 1.6;
+  padding: 2rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  backdrop-filter: var(--backdrop-blur);
 }
 
 .post-content {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.8;
+  color: var(--text-secondary);
 }
 
 .post-content h2 {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin: 3rem 0 1.5rem 0;
-  border-bottom: 3px solid #007acc;
-  padding-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  color: var(--text-primary);
+  margin: 4rem 0 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--champagne-gold);
+  font-weight: 600;
 }
 
 .post-content h3 {
-  font-size: 1.5rem;
-  color: #34495e;
-  margin: 2.5rem 0 1rem 0;
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin: 3rem 0 1.5rem 0;
   font-weight: 600;
 }
 
 .post-content h4 {
-  font-size: 1.2rem;
-  color: #34495e;
-  margin: 2rem 0 0.75rem 0;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin: 2.5rem 0 1rem 0;
   font-weight: 600;
 }
 
 .post-content p {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
+  color: var(--text-secondary);
 }
 
 .post-content ul, .post-content ol {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   padding-left: 2rem;
+  color: var(--text-secondary);
 }
 
 .post-content li {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
+  line-height: 1.7;
 }
 
 .post-content blockquote {
-  border-left: 4px solid #007acc;
-  margin: 2rem 0;
-  padding: 1.5rem 2rem;
-  background: #f8f9fa;
-  border-radius: 0 8px 8px 0;
+  border-left: 4px solid var(--champagne-gold);
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--glass-bg);
+  border-radius: 0 12px 12px 0;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  backdrop-filter: var(--backdrop-blur);
 }
 
 .post-content a {
-  color: #007acc;
+  color: var(--electric-blue);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 .post-content a:hover {
-  border-bottom-color: #007acc;
-  background: rgba(0, 122, 204, 0.1);
-  padding: 0 2px;
+  color: var(--champagne-gold);
+  border-bottom-color: var(--champagne-gold);
+  background: rgba(212, 175, 55, 0.1);
+  padding: 0 4px;
+  border-radius: 4px;
 }
 
 .post-content strong {
-  color: #2c3e50;
+  color: var(--text-primary);
   font-weight: 600;
+}
+
+.post-content em {
+  color: var(--text-primary);
 }
 
 .post-content hr {
   border: none;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, #007acc, transparent);
+  height: 1px;
+  background: var(--glass-border);
+  margin: 4rem 0;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
   margin: 3rem 0;
+  box-shadow: var(--shadow-medium);
+}
+
+.post-content code {
+  background: var(--elevated-dark);
+  color: var(--electric-blue);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+}
+
+.post-content pre {
+  background: var(--elevated-dark);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+  color: var(--text-secondary);
 }
 
 .post-footer {
-  margin-top: 4rem;
-  border-top: 1px solid #eee;
-  padding-top: 2rem;
+  margin-top: 6rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--glass-border);
 }
 
 .post-tags {
-  margin-bottom: 2rem;
-  color: #666;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.tags-label {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.tag-list {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tag {
-  display: inline-block;
-  background: #f0f8ff;
-  color: #007acc;
-  padding: 0.3rem 0.6rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
-  margin: 0.2rem;
+  background: var(--elevated-dark);
+  color: var(--champagne-gold);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .post-cta {
-  margin: 3rem 0;
+  margin-bottom: 4rem;
 }
 
 .cta-box {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 2.5rem;
-  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .cta-box h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
 }
 
 .cta-box p {
-  margin: 0 0 1.5rem 0;
-  opacity: 0.9;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
-.cta-button {
-  display: inline-block;
-  background: white;
-  color: #667eea;
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s ease;
-}
-
-.cta-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.post-navigation {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.back-to-blog {
-  color: #007acc;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border: 2px solid #007acc;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-}
-
-.back-to-blog:hover {
-  background: #007acc;
-  color: white;
+.cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   .blog-post {
-    padding: 1rem;
+    padding: 4rem 0;
+  }
+  
+  .post-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   
   .post-title {
@@ -293,19 +363,30 @@ layout: default
   }
   
   .post-content {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   .post-content h2 {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
+    margin: 3rem 0 1.5rem 0;
   }
   
-  .post-meta {
-    text-align: center;
+  .post-content h3 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem 0;
   }
   
   .cta-box {
-    padding: 2rem 1.5rem;
+    padding: 2rem;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tag-list {
+    justify-content: center;
   }
 }
 </style> 

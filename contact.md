@@ -1,16 +1,256 @@
 ---
-title: Contact
-layout: page
+title: "Executive Consultation"
+description: "Schedule your strategic consultation with Evernia Design. Premium web solutions for ambitious businesses."
+layout: default
 permalink: /contact/
 ---
 
-<div class="container page-content">
-  <h1>Get in Touch</h1>
-  <p>Ready to start a project or have a question? Choose the option below that best fits your needs, and let's connect!</p>
-
-  <div style="text-align: center; margin-top: 2em;">
-    <a href="{{ site.baseurl }}/book-audit/" class="cta-button cta-bottom-index">Book Your FREE 5-Point Website Audit Now!</a>
-    <a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button cta-bottom-index">Building Your First Website? Start Here!</a>
+<section style="padding: 4rem 0; background: var(--rich-charcoal);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h1 class="font-display">Ready to Transform Your <span class="text-gold">Digital Presence?</span></h1>
+      <p class="text-muted" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Schedule an executive consultation to discover how our premium solutions can drive measurable growth for your business.</p>
+    </div>
   </div>
+</section>
 
-</div> 
+<section style="padding: 6rem 0;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;" class="contact-grid">
+      
+      <!-- Contact Form -->
+      <div class="contact-form-section">
+        <div class="glass-card">
+          <h2 class="text-gold mb-3">Schedule Your Strategic Consultation</h2>
+          <p class="text-muted mb-4">Let's discuss your vision, goals, and how we can position your business for premium growth.</p>
+          
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" required class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" required class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="company" class="form-label">Company/Business Name</label>
+              <input type="text" id="company" name="company" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="budget" class="form-label">Project Budget Range</label>
+              <select id="budget" name="budget" class="form-input">
+                <option value="">Select Budget Range</option>
+                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+                <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+                <option value="$50,000+">$50,000+</option>
+                <option value="Ongoing retainer">Ongoing retainer</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="timeline" class="form-label">Project Timeline</label>
+              <select id="timeline" name="timeline" class="form-input">
+                <option value="">Select Timeline</option>
+                <option value="ASAP">As soon as possible</option>
+                <option value="1-3 months">1-3 months</option>
+                <option value="3-6 months">3-6 months</option>
+                <option value="6+ months">6+ months</option>
+                <option value="Just exploring">Just exploring options</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Project Details & Goals *</label>
+              <textarea id="message" name="message" rows="5" required class="form-input" placeholder="Tell us about your vision, current challenges, and what success looks like for your business..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem;">Schedule Consultation</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Contact Information & CTAs -->
+      <div class="contact-info-section">
+        <div class="glass-card mb-3">
+          <h3 class="text-blue mb-3">Premium Consultation Options</h3>
+          <div class="consultation-options">
+            <div class="consultation-item">
+              <h4 class="text-gold">Strategic Digital Audit</h4>
+              <p class="text-muted">Comprehensive analysis of your current digital presence with actionable recommendations.</p>
+              <span class="consultation-price">Complimentary</span>
+            </div>
+            
+            <div class="consultation-item">
+              <h4 class="text-gold">Executive Strategy Session</h4>
+              <p class="text-muted">90-minute deep-dive consultation covering positioning, conversion optimization, and growth strategy.</p>
+              <span class="consultation-price">$500 (Applied to project)</span>
+            </div>
+            
+            <div class="consultation-item">
+              <h4 class="text-gold">Digital Transformation Workshop</h4>
+              <p class="text-muted">Half-day intensive workshop for teams ready to elevate their entire digital strategy.</p>
+              <span class="consultation-price">$2,500</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="glass-card mb-3">
+          <h3 class="text-purple mb-3">Direct Contact</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <strong class="text-gold">Email:</strong>
+              <a href="mailto:hello@everniadesign.com" class="contact-link">hello@everniadesign.com</a>
+            </div>
+            
+            <div class="contact-item">
+              <strong class="text-gold">Response Time:</strong>
+              <span class="text-secondary">Within 24 hours</span>
+            </div>
+            
+            <div class="contact-item">
+              <strong class="text-gold">Consultation Hours:</strong>
+              <span class="text-secondary">Monday - Friday, 9 AM - 6 PM PST</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="glass-card">
+          <h3 class="text-gold mb-3">Ready to Get Started?</h3>
+          <p class="text-muted mb-3">If you prefer a more structured approach, choose from our guided consultation paths:</p>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <a href="/book-audit" class="btn btn-outline">Get Strategic Digital Audit</a>
+            <a href="/new-website-inquiry" class="btn btn-secondary">Start New Project Inquiry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.contact-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  background: var(--elevated-dark);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--champagne-gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.consultation-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.consultation-item {
+  padding: 1.5rem;
+  background: var(--elevated-dark);
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.consultation-item:hover {
+  border-color: var(--champagne-gold);
+  transform: translateY(-2px);
+}
+
+.consultation-item h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.consultation-item p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.consultation-price {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--champagne-gold), var(--electric-blue));
+  color: var(--deep-black);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-link {
+  color: var(--electric-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--champagne-gold);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .consultation-item {
+    padding: 1rem;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+  }
+}
+</style> 

@@ -1,20 +1,22 @@
 - name: Jesse Boyes
-  role: Creative Director
-  bio: "Jesse leads the creative vision at Evernia Design."
+  role: Creative Director & Founder
+  bio: "Jesse leads the creative vision at Evernia Design, bringing strategic thinking and premium design sensibility to ambitious businesses ready to elevate their digital presence."
   photo: jesse.jpg
-  links:
-    linkedin: "https://www.linkedin.com/in/jessejamesboyes/"
-    twitter: "https://twitter.com/unblockedcarver"
+  expertise: "Strategic Design, Brand Positioning, User Experience, Business Strategy"
+  linkedin: "https://www.linkedin.com/in/jessejamesboyes/"
+  twitter: "https://twitter.com/unblockedcarver"
+  
 - name: John Hidelgeiser
-  role: Lead Developer
-  bio: "John builds robust web solutions for our clients."
+  role: Lead Systems Architect
+  bio: "John architects robust, high-performance web solutions that scale with business growth and deliver exceptional user experiences."
   photo: john.jpg
-  links:
-    github: "https://github.com/johnhidelgeiser"
-    linkedin: "https://linkedin.com/in/johnhidelgeiser" 
+  expertise: "Full-Stack Development, Performance Optimization, System Architecture, API Integration"
+  github: "https://github.com/johnhidelgeiser"
+  linkedin: "https://linkedin.com/in/johnhidelgeiser"
+  
 - name: Haggard Lumhoven
-  role: SEO Solutions Engineer
-  bio: "Haggard is an SEO Solutions Engineer at Evernia Design."
+  role: SEO Intelligence Specialist
+  bio: "Haggard leverages advanced SEO strategies and data analytics to ensure premium websites achieve top search rankings and drive qualified traffic."
   photo: haggard.jpg
-  links:
-    linkedin: "https://linkedin.com/in/haggardlumhoven"
+  expertise: "Technical SEO, Analytics, Search Strategy, Conversion Optimization"
+  linkedin: "https://linkedin.com/in/haggardlumhoven"

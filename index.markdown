@@ -3,87 +3,132 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Evernia Design
+title: "Premium Web Solutions for Ambitious Businesses"
+description: "Transform your digital presence with intelligent, ROI-focused web design that commands premium pricing and drives measurable results."
 ---
 
-# Web Development for Service Professionals and Forward-Thinking Entrepreneurs
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="font-display">Premium Web Solutions for <span class="text-gold">Ambitious Businesses</span></h1>
+    <p class="subtitle">Where Intelligence Meets Investment Returns. Transform your digital presence with sophisticated web solutions that command premium pricing and drive measurable ROI.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+      <a href="/contact" class="btn btn-primary">Schedule Executive Consultation</a>
+      <a href="/portfolio" class="btn btn-outline">View Success Stories</a>
+    </div>
+  </div>
+</section>
 
-## Is Your Website Costing You Clients?
-If your outdated or non-existent website is driving clients away, it's time for a change. At Evernia Design, we create blazing-fast, custom websites that turn visitors into bookings—without the tech headaches. Get agency quality, freelancer flexibility, and AI-powered speed.
+<section class="services">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="font-display">Executive-Level <span class="text-gold">Digital Strategies</span></h2>
+      <p class="text-muted" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Sophisticated web solutions engineered for businesses that understand the value of premium positioning and intelligent investment in digital assets.</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg class="icon"><use href="#icon-lightning"></use></svg>
+        </div>
+        <h3 class="text-primary mb-2">High-Performance Architecture</h3>
+        <p class="text-muted">Lightning-fast, enterprise-grade websites built with cutting-edge technology. Perfect Core Web Vitals, advanced SEO optimization, and conversion-focused design that turns visitors into high-value clients.</p>
+        <ul style="text-align: left; color: var(--text-secondary); margin-top: 1rem;">
+          <li>Sub-3-second load times guaranteed</li>
+          <li>Advanced performance optimization</li>
+          <li>Enterprise security standards</li>
+          <li>Mobile-first responsive design</li>
+        </ul>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <svg class="icon"><use href="#icon-target"></use></svg>
+        </div>
+        <h3 class="text-primary mb-2">Strategic Brand Positioning</h3>
+        <p class="text-muted">Sophisticated visual identity and messaging that positions your business as the premium choice. Research-backed design psychology and persuasive copywriting that justifies higher pricing.</p>
+        <ul style="text-align: left; color: var(--text-secondary); margin-top: 1rem;">
+          <li>Psychology-driven design systems</li>
+          <li>Premium brand positioning</li>
+          <li>Conversion-optimized messaging</li>
+          <li>Trust signal optimization</li>
+        </ul>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <svg class="icon"><use href="#icon-analytics"></use></svg>
+        </div>
+        <h3 class="text-primary mb-2">ROI-Driven Development</h3>
+        <p class="text-muted">Every element engineered for measurable business impact. Advanced analytics implementation, A/B testing frameworks, and ongoing optimization that delivers quantifiable returns on your investment.</p>
+        <ul style="text-align: left; color: var(--text-secondary); margin-top: 1rem;">
+          <li>Conversion tracking & optimization</li>
+          <li>Advanced analytics implementation</li>
+          <li>Lead generation automation</li>
+          <li>Performance monitoring dashboard</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="/services" class="btn btn-secondary">Explore Premium Solutions</a>
+    </div>
+  </div>
+</section>
 
-<div class="cta-button-group">
-<a href="{{ site.baseurl }}/book-audit/" class="cta-button">Book Your FREE 5-Point Website Audit Now!</a>
-<a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button">Building Your First Website? Start Here!</a>
-</div>
+<section style="padding: 8rem 0; background: var(--elevated-dark);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="font-display">Proven <span class="text-blue">Success Stories</span></h2>
+      <p class="text-muted" style="font-size: 1.2rem;">Real businesses. Real results. Real ROI.</p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+      <div class="glass-card">
+        <h3 class="text-gold mb-2">Healing House Abby</h3>
+        <p class="text-muted mb-3">Premium massage therapy clinic website featuring elegant design, seamless booking integration, and mobile-optimized user experience.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="text-secondary" style="font-size: 0.9rem;">Healthcare & Wellness</span>
+          <a href="/portfolio" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border);">View Case Study</a>
+        </div>
+      </div>
+      
+      <div class="glass-card">
+        <h3 class="text-gold mb-2">Donna May Paints</h3>
+        <p class="text-muted mb-3">Sophisticated artist portfolio showcasing vibrant collections with gallery-quality image presentation and professional artist branding.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="text-secondary" style="font-size: 0.9rem;">Arts & Creative</span>
+          <a href="/portfolio" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border);">View Case Study</a>
+        </div>
+      </div>
+      
+      <div class="glass-card">
+        <h3 class="text-gold mb-2">Oakmoss</h3>
+        <p class="text-muted mb-3">Premium artist website combining sophisticated design with SEO optimization and strategic content marketing for maximum online visibility.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="text-secondary" style="font-size: 0.9rem;">Design & SEO</span>
+          <a href="/portfolio" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border);">View Case Study</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="/portfolio" class="btn btn-outline">Explore All Success Stories</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 8rem 0; background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%), var(--rich-charcoal);">
+  <div class="container text-center">
+    <h2 class="font-display mb-3">Ready to Transform Your <span class="text-gold">Digital Presence?</span></h2>
+    <p class="text-muted mb-4" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Get a comprehensive digital audit and strategic roadmap. Discover exactly how to position your business for premium growth and commanding market presence.</p>
+    
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+      <a href="/contact" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.25rem 2.5rem;">Get Your Strategic Audit</a>
+      <a href="/team" class="btn btn-secondary">Meet The Team</a>
+    </div>
+    
+    <p class="text-subtle mt-3" style="font-size: 0.95rem;"><em>Premium consultation. Strategic insights. Measurable results.</em></p>
+  </div>
+</section>
 
 ---
-
-## Why Your Website Is Failing You
-
-Let's be real: a bad website isn't just inconvenient—it's hurting your business. As a Canadian service professional (massage therapist, chiropractor, somatic coach, etc.), your website should be your #1 employee, working 24/7 to attract leads, build trust, and book clients.
-
-But too often, it's a source of frustration:
-
-- **Outdated or Slow:** Looks like 2005 or takes ages to load, sending visitors running.
-- **Generic Templates:** Blends in with competitors, failing to reflect your unique brand.
-- **Hard to Update:** Tech struggles or unreliable developers waste your time.
-- **Leaking Leads:** Poor design and navigation mean missed bookings.
-
-You're an expert in your field, not web development. But every day your website underperforms, you're losing clients to competitors. How many more can you afford to miss?
-
----
-
-## Imagine a Website That Wins Clients for You
-
-Picture a prospective client, Sarah, searching for "chiropractor [Your City]." She's frustrated by slow, unprofessional websites. Then she lands on your new site:
-
-- **Lightning-Fast:** Loads in under a second, keeping her engaged.
-- **Professional Design:** Clean, modern, and trustworthy, reflecting your expertise.
-- **Clear Messaging:** Speaks to her needs and guides her to book in minutes.
-
-That's the power of a website built right. At Evernia Design, we're a "micro-agency" using cutting-edge AI to craft custom, high-performance websites faster and more affordably than traditional agencies.
-
-**How AI Helps You:** Our AI tools streamline repetitive tasks, cutting build times by 40–60%. This means you get a hand-coded, non-CMS (no clunky WordPress!) site tailored to your brand in just 2–8 weeks. Our expert designers ensure pixel-perfect quality, so you get agency results with a personal touch.
-
----
-
-## Get the Website Your Business Deserves
-
-We build clean-coded, non-CMS websites designed for Canadian service businesses like yours. Here's what you get:
-
-- **Blazing-Fast Load Times:** Keep visitors engaged and boost SEO.
-- **Unique, Custom Designs:** Stand out with a brand-aligned look.
-- **Conversion-Focused:** Turn clicks into bookings with ROI-driven content.
-- **Mobile-First Perfection:** Flawless on any device to capture every client.
-- **SEO-Ready:** Built to rank higher in local search results.
-- **One Point of Contact:** Clear communication with a dedicated partner.
-- **100% Satisfaction Guarantee:** If you're not thrilled, we'll work until you are.
-
----
-
-## Transparent, Flexible Pricing
-Our custom websites start at $2,500, with flexible payment plans to fit your budget. After your FREE 5-Point Website Audit, we'll recommend one of our three tiers:
-
-- **Launchpad:** 5-page custom site with SEO and booking integration.
-- **Growth Engine:** 10+ pages with advanced features for scaling.
-- **Market Leader:** Bespoke solutions with e-commerce or membership portals.
-
-Optional maintenance plans (from $50/mo) include security updates, backups, and up to 2 content edits monthly for peace of mind.
-
----
-
-## Stop Losing Clients—Act Now!
-
-Your outdated website is your business's biggest bottleneck. In just 2–8 weeks, we can launch a stunning, custom site that attracts clients, simplifies bookings, and positions you as the go-to expert.
-
-**Here's What to Do Next:**
-Book a FREE 5-Point Website Audit (no obligation). We'll analyze your site's speed, SEO, mobile performance, conversion potential, and design, delivering a personalized report within 48 hours. Plus, book by May 31, 2025, and get a FREE SEO keyword report ($200 value) to boost your rankings!
-
-<div class="cta-button-group">
-<a href="{{ site.baseurl }}/book-audit/" class="cta-button">Book Your FREE 5-Point Website Audit Now!</a>
-<a href="{{ site.baseurl }}/new-website-inquiry/" class="cta-button">Building Your First Website? Start Here!</a>
-</div>
-
-P.S. Your competitors are stealing clients with better websites. Don't lose another lead. Book now to transform your online presence and outrank them in weeks!
-
-***

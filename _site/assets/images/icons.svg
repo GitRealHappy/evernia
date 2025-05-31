@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  
+  <!-- Lightning/Performance Icon -->
+  <symbol id="icon-lightning" viewBox="0 0 24 24">
+    <path d="M13 0L4 14h6l-2 10 9-14h-6l2-10z" fill="currentColor"/>
+    <path d="M11 2L6.5 12H10l-1.5 8L15.5 12H12L11 2z" fill="currentColor" opacity="0.7"/>
+  </symbol>
+  
+  <!-- E-commerce/Store Icon -->
+  <symbol id="icon-store" viewBox="0 0 24 24">
+    <path d="M4 7V4a1 1 0 011-1h14a1 1 0 011 1v3" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M4 7l1-3h14l1 3v2a2 2 0 01-2 2h-1v8a1 1 0 01-1 1H8a1 1 0 01-1-1v-8H6a2 2 0 01-2-2V7z" fill="currentColor"/>
+    <path d="M9 16h6M9 13h6" stroke="white" stroke-width="1.5" opacity="0.8"/>
+  </symbol>
+  
+  <!-- Tools/Development Icon -->
+  <symbol id="icon-tools" viewBox="0 0 24 24">
+    <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.77 3.77z" fill="currentColor"/>
+    <circle cx="8" cy="8" r="2" fill="white" opacity="0.9"/>
+  </symbol>
+  
+  <!-- Target/Strategy Icon -->
+  <symbol id="icon-target" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="12" r="2" fill="currentColor"/>
+    <path d="M12 2v4M12 18v4M22 12h-4M6 12H2" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Content/Writing Icon -->
+  <symbol id="icon-content" viewBox="0 0 24 24">
+    <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" fill="currentColor"/>
+    <path d="M7 9h10M7 13h10M7 17h6" stroke="white" stroke-width="2" opacity="0.9"/>
+    <circle cx="18" cy="6" r="2" fill="white" opacity="0.7"/>
+  </symbol>
+  
+  <!-- Design/Palette Icon -->
+  <symbol id="icon-design" viewBox="0 0 24 24">
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.19 0 2-.81 2-2 0-.54-.22-1.03-.59-1.41-.36-.36-.59-.86-.59-1.41 0-1.1.9-2 2-2h2.36c3.13 0 5.64-2.51 5.64-5.64C22 6.48 17.52 2 12 2z" fill="currentColor"/>
+    <circle cx="6.5" cy="11.5" r="1.5" fill="white" opacity="0.9"/>
+    <circle cx="9.5" cy="7.5" r="1.5" fill="white" opacity="0.9"/>
+    <circle cx="14.5" cy="7.5" r="1.5" fill="white" opacity="0.9"/>
+    <circle cx="17.5" cy="11.5" r="1.5" fill="white" opacity="0.9"/>
+  </symbol>
+  
+  <!-- Analytics/Growth Icon -->
+  <symbol id="icon-analytics" viewBox="0 0 24 24">
+    <path d="M3 18v-6a2 2 0 012-2h4a2 2 0 012 2v6" fill="currentColor"/>
+    <path d="M13 18V9a2 2 0 012-2h4a2 2 0 012 2v9" fill="currentColor"/>
+    <path d="M3 22h18" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 6l3-3 3 3" stroke="white" stroke-width="2" fill="none"/>
+  </symbol>
+  
+  <!-- Security/Shield Icon -->
+  <symbol id="icon-security" viewBox="0 0 24 24">
+    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor"/>
+    <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" fill="none"/>
+  </symbol>
+  
+  <!-- Rocket/Launch Icon -->
+  <symbol id="icon-rocket" viewBox="0 0 24 24">
+    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z" fill="currentColor"/>
+    <path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z" fill="currentColor"/>
+    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" fill="currentColor" opacity="0.7"/>
+    <circle cx="15" cy="9" r="1" fill="white"/>
+  </symbol>
+  
+  <!-- Additional Icons for UI -->
+  
+  <!-- Phone/Contact Icon -->
+  <symbol id="icon-phone" viewBox="0 0 24 24">
+    <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+  </symbol>
+  
+  <!-- Email Icon -->
+  <symbol id="icon-email" viewBox="0 0 24 24">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="currentColor"/>
+    <polyline points="22,6 12,13 2,6" stroke="white" stroke-width="2" fill="none"/>
+  </symbol>
+  
+  <!-- Clock/Time Icon -->
+  <symbol id="icon-clock" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+    <polyline points="12,6 12,12 16,14" stroke="white" stroke-width="2" fill="none"/>
+  </symbol>
+  
+  <!-- User/Person Icon -->
+  <symbol id="icon-user" viewBox="0 0 24 24">
+    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="7" r="4" fill="currentColor"/>
+  </symbol>
+  
+  <!-- Check/Success Icon -->
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="currentColor"/>
+    <path d="m9 12 2 2 4-4" stroke="white" stroke-width="2" fill="none"/>
+  </symbol>
+  
+  <!-- Arrow Right Icon -->
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+    <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/>
+    <polyline points="12,5 19,12 12,19" stroke="currentColor" stroke-width="2" fill="none"/>
+  </symbol>
+  
+  <!-- Brain/Intelligence Icon -->
+  <symbol id="icon-brain" viewBox="0 0 24 24">
+    <path d="M9.5 2A2.5 2.5 0 007 4.5v.55a2.5 2.5 0 00-2.5 2.5V9.5A2.5 2.5 0 007 12h.55a2.5 2.5 0 002.5 2.5h2.9a2.5 2.5 0 002.5-2.5H16a2.5 2.5 0 002.5-2.5V7.5A2.5 2.5 0 0016 5h-.55A2.5 2.5 0 0013 2.5h-1A2.5 2.5 0 009.5 2z" fill="currentColor"/>
+    <circle cx="10" cy="8" r="1" fill="white"/>
+    <circle cx="14" cy="8" r="1" fill="white"/>
+    <path d="M10 12h4" stroke="white" stroke-width="1.5"/>
+  </symbol>
+  
+  <!-- Globe/Global Icon -->
+  <symbol id="icon-globe" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" fill="currentColor" opacity="0.3"/>
+  </symbol>
+  
+</svg> 
